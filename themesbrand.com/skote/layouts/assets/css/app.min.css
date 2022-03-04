@@ -4605,6 +4605,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > td.dtr-control:before {
   margin: 0 auto;
 }
 /*# sourceMappingURL=app.min.css.map */
+<<<<<<< HEAD
 
 /* Cta section */
 
@@ -4654,6 +4655,20 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > td.dtr-control:before {
 }
 
 .select-bulk-cat {
+=======
+/********************************************************************************************************************/
+/*************************Category page start here******************************/
+.container-category .checkbox-select-date {
+  background-color: #dae1ec;
+  border-radius: 4px;
+  padding: 10px 10px 10px 1px;
+  text-align: center;
+  width: 165px;
+  margin-bottom: 5px;
+}
+
+.container-category .select-bulk-cat {
+>>>>>>> 6ee8f202ba18c1afad3d4565e6250c540702a10b
   background-color: #dae1ec;
   border-radius: 4px;
   padding: 13px 10px 10px 15px;
@@ -4738,3 +4753,95 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > td.dtr-control:before {
   margin-right: 10px;
   margin-top: -25px;
 }
+.container-category .add-btn{
+  background-color: #0a65ff;
+}
+.container-category .apply-btn{
+  padding: 10px 15px 10px 15px;
+  
+}
+.container-category  .input-group-category .input-custom input{
+  padding:15px 11px 15px 15px;
+  width: 370px;
+ }
+ .container-category .input-group-category .input-custom select{
+  padding:15px 11px 15px 15px;
+  width: 370px;
+ }
+ .container-category textarea{
+  resize: none;
+  padding: 15px 5px 5px 15px;
+ }
+ .container-category .input-group-category{
+   margin: 0px 0px 0px 30px;
+ }
+ .container-category .header-container  h4{
+   margin-left: 32px;
+   margin-bottom: 40px;
+ }
+ .container-category .filter-button .form-check-input[type=checkbox]{
+   border-radius: 0px ;
+   margin-left: 10px;
+   border-color: white;
+ }
+ .container-category #datatable .form-check-input[type=checkbox]{
+   border-radius: 0px ;
+   text-align: center;
+ }
+ /*radio button for select option*/
+ .container-category  input[type="radio"] {
+  display: none;
+}
+.container-category input[type="radio"] + label {
+  display: inline-block;
+  cursor: pointer;
+}
+.container-category  input[type="radio"] + label:before {
+  content: "";
+  display: inline-block;
+  position: relative;
+  border: 1px solid #000;
+  border-radius:50px;
+  width: 20px;
+  height: 20px;
+  margin:0 10px;
+  border-radius: 0px;
+}
+.container-category  input[type="radio"]:checked + label:before {
+  content: "✔";
+  font-family: 'lucida grande';
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+}
+
+
+/*************************Category page ends here******************************/
+/************************Add New Product**************************************/
+.Neon {
+  font-family: sans-serif;
+  font-size: 14px;
+  color: #494949;
+  position: relative;
+  
+
+}
+.cta-box{
+  height: 100px;
+  width: 100px;
+  background-color: #dedede;
+  margin: 10px;
+}
+.Neon * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.page-content-new .cat-new-pro{
+  position: absolute;
+  margin-left: -9px;
+  width: 50%;
+}
+
+
+/*****************************Add New Product*************************************/
