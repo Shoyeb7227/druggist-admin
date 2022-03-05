@@ -4769,6 +4769,25 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > td.dtr-control:before {
 }
 
 /* Add post page : End // Shoyeb */
+/* Parent Category page : Start // Shoyeb */
+.category-toast-content
+{
+    margin: auto;
+  
+}
+.category-toast-content h4
+{
+  font-size: 18px;
+
+}
+.edit-cat-parent
+{
+  background-color: transparent;
+  font-size: 20px;
+  border: none;
+  padding: 20px;
+}
+/* Parent Category page : End // Shoyeb */
 
 .Neon {
   font-family: sans-serif;
