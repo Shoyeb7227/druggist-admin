@@ -4647,7 +4647,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > td.dtr-control:before {
     background-color: #f3f3f9;
     -webkit-box-shadow: none;
     box-shadow: none;
-    border-radius: 30px;
+    border-radius: 5px;
 }
 .scope-control
 {
@@ -4658,6 +4658,22 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > td.dtr-control:before {
     font-weight: 400;
     line-height: 1.5;
     color: #495057;
+    width: 250px;
+    position: relative;
+
+}
+/* .scope-control::before
+{
+  content: "\eb2d";
+  position: absolute;
+} */
+
+.search-scp
+{
+  position: absolute;
+  top: 11px;
+  left: 14px;
+  font-size: 17px;
 }
 .tag-x-cut >  div
 {
@@ -4715,8 +4731,38 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > td.dtr-control:before {
 {
   background-color: #eff2f7;
 }
+.toast-content button
+{
+  padding: 10px;
+}
 
 
+.toast-img-01 img
+{
+  height: 89px;
+  width: 80px;
+  object-fit: cover;
+}
+.toast-content-01
+{
+  padding: 5px 10px;
+  margin: auto;
+
+}
+.toast-content-01 p
+{
+  margin: 0px;
+  padding: 0px;
+  line-height: 16px;
+}
+.toast-white-01
+{
+  background-color: #eff2f7;
+}
+.toast-content-01 button
+{
+  /* padding: 30px; */
+}
 
 /* Home Feature : End // Shoyeb */
 /* Add post page  : End // Shoyeb */
