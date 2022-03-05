@@ -4719,6 +4719,43 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > td.dtr-control:before {
 
 
 /* Home Feature : End // Shoyeb */
+/* Add post page  : End // Shoyeb */
+.cta-div
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;  
+  border:1px solid #eee;
+  padding: 10px 15px;
+  max-width: 400px;
+  border-radius: 10px;
+
+}
+.cta-div img
+{
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+}
+.cta-div button
+{
+  border: none;
+  background-color: transparent;
+}
+.cta-content h4
+{
+  margin: 0px auto;
+    font-size: 14px;
+    font-weight: 600;
+}
+.cta-content p 
+{
+  margin: 0px auto;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+/* Add post page : End // Shoyeb */
 
 
 .Neon {
