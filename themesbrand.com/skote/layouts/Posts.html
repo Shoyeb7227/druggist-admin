@@ -4,19 +4,28 @@
 <head>
 
     <meta charset="utf-8" />
-    <title>Form Layouts | Skote - Admin & Dashboard Template</title>
+    <title>File Manager | Skote - Admin & Dashboard Template</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
     <meta content="Themesbrand" name="author" />
     <!-- App favicon -->
     <link rel="shortcut icon" href="assets/images/favicon.ico">
-
+    <!-- DataTables -->
+    <link href="assets/libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/libs/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css" rel="stylesheet"
+        type="text/css" />
+    <!--table data fetch link-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <!-- Bootstrap Css -->
     <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
     <!-- Icons Css -->
     <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
     <!-- App Css-->
     <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+    <!--checkbox with single select jquery library-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 </head>
 
@@ -867,348 +876,608 @@
         <div class="main-content">
 
             <div class="page-content">
-                <div class="container-fluid">
-
-                    <!-- start page title -->
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-0 font-size-18">Form Layouts</h4>
-
-                                <div class="page-title-right">
-                                    <ol class="breadcrumb m-0">
-                                        <li class="breadcrumb-item"><a href="javascript: void(0);">Forms</a></li>
-                                        <li class="breadcrumb-item active">Form Layouts</li>
-                                    </ol>
-                                </div>
-
-                            </div>
-                        </div>
+                <!--container for category page starts here-->
+                <div class="container-category">
+                    <div class="header-container">
+                        <h4>Posts</h4>
                     </div>
-                    <!-- end page title -->
 
-<<<<<<< HEAD
-                    <div class="row">
-                        <div class="col-xl-6">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h4 class="card-title mb-4">Form Grid Layout</h4>
-=======
-                        <div class="row">
-                            <div class="col-xl-6">
-                                <div class="card">
-                                    <div class="card-body">
->>>>>>> a07ced90cf8a3047c9d7c44cc6272f9370f24388
+                    <div class="row ">
+                       
 
-                                    <form>
-                                        <div class="mb-3">
-                                            <label for="formrow-firstname-input" class="form-label">First Name</label>
-                                            <input type="text" class="form-control" id="formrow-firstname-input"
-                                                placeholder="Enter Your First Name">
-                                        </div>
 
-                                        <div class="row">
-
-                                            <div class="col-md-6">
-                                                <div class="mb-3">
-                                                    <label for="formrow-email-input" class="form-label">Email</label>
-                                                    <input type="email" class="form-control" id="formrow-email-input"
-                                                        placeholder="Enter Your Email ID">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="mb-3">
-                                                    <label for="formrow-password-input"
-                                                        class="form-label">Password</label>
-                                                    <input type="password" class="form-control"
-                                                        id="formrow-password-input" placeholder="Enter Your Password">
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="row">
-                                            <div class="col-lg-4">
-                                                <div class="mb-3">
-                                                    <label for="formrow-inputCity" class="form-label">City</label>
-                                                    <input type="text" class="form-control" id="formrow-inputCity"
-                                                        placeholder="Enter Your Living City">
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-4">
-                                                <div class="mb-3">
-                                                    <label for="formrow-inputState" class="form-label">State</label>
-                                                    <select id="formrow-inputState" class="form-select">
-                                                        <option selected>Choose...</option>
-                                                        <option>...</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-
-                                            <div class="col-lg-4">
-                                                <div class="mb-3">
-                                                    <label for="formrow-inputZip" class="form-label">Zip</label>
-                                                    <input type="text" class="form-control" id="formrow-inputZip"
-                                                        placeholder="Enter Your Zip Code">
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="mb-3">
-
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" id="gridCheck">
-                                                <label class="form-check-label" for="gridCheck">
-                                                    Check me out
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <button type="submit" class="btn btn-primary w-md">Submit</button>
-                                        </div>
-                                    </form>
-                                </div>
-                                <!-- end card body -->
-                            </div>
-                            <!-- end card -->
-                        </div>
-                        <!-- end col -->
-
-                        <div class="col-xl-6">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h4 class="card-title mb-4">Horizontal Form Layout</h4>
-
-                                    <form>
-                                        <div class="row mb-4">
-                                            <label for="horizontal-firstname-input"
-                                                class="col-sm-3 col-form-label">First name</label>
-                                            <div class="col-sm-9">
-                                                <input type="text" class="form-control" id="horizontal-firstname-input"
-                                                    placeholder="Enter Your ">
-                                            </div>
-                                        </div>
-                                        <div class="row mb-4">
-                                            <label for="horizontal-email-input"
-                                                class="col-sm-3 col-form-label">Email</label>
-                                            <div class="col-sm-9">
-                                                <input type="email" class="form-control" id="horizontal-email-input"
-                                                    placeholder="Enter Your Email ID">
-                                            </div>
-                                        </div>
-                                        <div class="row mb-4">
-                                            <label for="horizontal-password-input"
-                                                class="col-sm-3 col-form-label">Password</label>
-                                            <div class="col-sm-9">
-                                                <input type="password" class="form-control"
-                                                    id="horizontal-password-input" placeholder="Enter Your Password">
-                                            </div>
-                                        </div>
-
-                                        <div class="row justify-content-end">
-                                            <div class="col-sm-9">
-
-                                                <div class="form-check mb-4">
-                                                    <input class="form-check-input" type="checkbox"
-                                                        id="horizontalLayout-Check">
-                                                    <label class="form-check-label" for="horizontalLayout-Check">
-                                                        Remember me
-                                                    </label>
-                                                </div>
-
-                                                <div>
-                                                    <button type="submit" class="btn btn-primary w-md">Submit</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-                                <!-- end card body -->
-                            </div>
-                            <!-- end card -->
-                        </div>
-                        <!-- end col -->
-                    </div>
-                    <!-- end row -->
-
-                    <div class="row">
+                        <!--2nd section starts here-->
                         <div class="col-lg-12">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h5 class="card-title mb-4">Auto Sizing</h5>
+                            <div class="container-fluid">
 
-                                    <form class="row gy-2 gx-3 align-items-center">
-                                        <div class="col-sm-auto">
-                                            <label class="visually-hidden" for="autoSizingInput">Name</label>
-                                            <input type="text" class="form-control" id="autoSizingInput"
-                                                placeholder="Jane Doe">
-                                        </div>
-                                        <div class="col-sm-auto">
-                                            <label class="visually-hidden" for="autoSizingInputGroup">Username</label>
-                                            <div class="input-group">
-                                                <div class="input-group-text">@</div>
-                                                <input type="text" class="form-control" id="autoSizingInputGroup"
-                                                    placeholder="Username">
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-auto">
-                                            <label class="visually-hidden" for="autoSizingSelect">Preference</label>
-                                            <select class="form-select" id="autoSizingSelect">
-                                                <option selected>Choose...</option>
-                                                <option value="1">One</option>
-                                                <option value="2">Two</option>
-                                                <option value="3">Three</option>
-                                            </select>
-                                        </div>
-                                        <div class="col-sm-auto">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" id="autoSizingCheck">
-                                                <label class="form-check-label" for="autoSizingCheck">
-                                                    Remember me
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-auto">
-                                            <button type="submit" class="btn btn-primary w-md">Submit</button>
-                                        </div>
-                                    </form>
-                                </div>
-                                <!-- end card body -->
-                            </div>
-                            <!-- end card -->
-                        </div>
-                        <!-- end col -->
-                    </div>
-                    <!-- end row -->
 
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h5 class="card-title mb-4">Inline forms</h5>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="d-flex mb-5 mx-2 filter-button">
+                                                    <div>
+                                                        <i class="fa-brands fa-audible"></i>
+                                                    </div>
+                                                    <div class="dropdown">
+                                                        <button class="btn select-bulk-cat  dropdown-toggle"
+                                                            type="button" id="dropdownMenuButton"
+                                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                                            Bulk Action<i class="mdi mdi-chevron-down"></i>
+                                                        </button>
+                                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                            <a class="dropdown-item" href="#"> 
+                                                                <input type="radio"
+                                                                    class="form-control" name="skill" value="Delete"
+                                                                    id="delete">
+                                                                    <label for="delete">Delete</label>
+                                                             </a>
+                                                            <a class="dropdown-item" href="#"> <input type="radio"
+                                                                    class="form-control" name="skill" value="Add"
+                                                                    id="add"><label for="add">ADD</label> </a>
+                                                           
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <button class=" btn btn-primary mx-2 apply-btn">Apply</button>
+                                                    </div>
+                                                    <div>
+                                                        <div class="select-category">
 
-                                    <form class="row row-cols-lg-auto g-3 align-items-center">
-                                        <div class="col-12">
-                                            <label class="visually-hidden"
-                                                for="inlineFormInputGroupUsername">Username</label>
-                                            <div class="input-group">
-                                                <div class="input-group-text">@</div>
-                                                <input type="text" class="form-control"
-                                                    id="inlineFormInputGroupUsername" placeholder="Username">
-                                            </div>
-                                        </div>
+                                                            <div class="dropdown">
+                                                                <button class="btn select-bulk-cat  dropdown-toggle"
+                                                                    type="button" id="dropdownMenuButton"
+                                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                                    Select Category<i class="mdi mdi-chevron-down"></i>
+                                                                </button>
+                                                                <div class="dropdown-menu"
+                                                                    aria-labelledby="dropdownMenuButton">
+                                                                    <a class="dropdown-item" href="#"> <input
+                                                                            type="radio" class="form-control"
+                                                                            name="skill-1" value="male" id="m"><label
+                                                                            for="m">Male</label> </a>
+                                                                    <a class="dropdown-item" href="#"> <input
+                                                                            type="radio" class="form-control"
+                                                                            name="skill-1" value="female" id="f"><label
+                                                                            for="f">Female</label> </a>
+                                                                    <a class="dropdown-item" href="#"><input
+                                                                            type="radio" class="form-control"
+                                                                            name="skill-1" value="other" id="o"> <label
+                                                                            for="o">Other</label></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
 
-                                        <div class="col-12">
-                                            <label class="visually-hidden" for="inlineFormSelectPref">Preference</label>
-                                            <select class="form-select" id="inlineFormSelectPref">
-                                                <option selected>Choose...</option>
-                                                <option value="1">One</option>
-                                                <option value="2">Two</option>
-                                                <option value="3">Three</option>
-                                            </select>
-                                        </div>
+                                                    <div class="mx-2 ">
 
-                                        <div class="col-12">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" id="inlineFormCheck">
-                                                <label class="form-check-label" for="inlineFormCheck">
-                                                    Remember me
-                                                </label>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-12">
-                                            <button type="submit" class="btn btn-primary w-md">Submit</button>
-                                        </div>
-                                    </form>
-
-                                </div>
-                                <!-- end card body -->
-                            </div>
-                            <!-- end card -->
-                        </div>
-                        <!-- end col -->
-                    </div>
-                    <!-- end row -->
-
-                    <div class="row">
-                        <div class="col-xl-6">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h5 class="card-title">Floating labels</h5>
-                                    <p class="card-title-desc">Create beautifully simple form labels that float over
-                                        your input fields.</p>
-
-                                    <form>
-                                        <div class="form-floating mb-3">
-                                            <input type="text" class="form-control" id="floatingnameInput"
-                                                placeholder="Enter Name">
-                                            <label for="floatingnameInput">Name</label>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <div class="form-floating mb-3">
-                                                    <input type="email" class="form-control" id="floatingemailInput"
-                                                        placeholder="Enter Email address">
-                                                    <label for="floatingemailInput">Email address</label>
+                                                        <div>
+                                                            <input class="form-control checkbox-select-date" type="date"
+                                                                placeholder="Select Date" id="example-date-input">
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="form-floating mb-3">
-                                                    <select class="form-select" id="floatingSelectGrid"
-                                                        aria-label="Floating label select example">
-                                                        <option selected>Open this select menu</option>
-                                                        <option value="1">One</option>
-                                                        <option value="2">Two</option>
-                                                        <option value="3">Three</option>
-                                                    </select>
-                                                    <label for="floatingSelectGrid">Works with selects</label>
-                                                </div>
-                                            </div>
-                                        </div>
+                                                <table id="datatable"
+                                                    class="table table-bordered dt-responsive  nowrap w-100">
 
-                                        <div class="mb-3">
 
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" id="floatingCheck">
-                                                <label class="form-check-label" for="floatingCheck">
-                                                    Check me out
-                                                </label>
+                                                    <thead>
+                                                        <tr>
+                                                            <th class="text-center"><input type="checkbox"
+                                                                    class="form-check-input" id="select-all"></th>
+                                                            <th>Name</th>
+                                                            <th>Description</th>
+                                                            <th>Slug</th>
+                                                            <th>Count</th>
+
+                                                        </tr>
+                                                    </thead>
+
+
+                                                    <tbody>
+                                                        <tr>
+                                                            <th class="text-center"><input type="checkbox"
+                                                                    class="form-check-input" name="category"></th>
+                                                            <td>Tiger Nixon</td>
+                                                            <td>System Architect</td>
+                                                            <td>Edinburgh</td>
+                                                            <td>61</td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="text-center"><input type="checkbox"
+                                                                    class="form-check-input" name="category"></th>
+                                                            <td>Garrett Winters</td>
+                                                            <td>Accountant</td>
+                                                            <td>Tokyo</td>
+                                                            <td>63</td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="text-center"><input type="checkbox"
+                                                                    class="form-check-input" name="category"></th>
+                                                            <td>Ashton Cox</td>
+                                                            <td>Junior Technical Author</td>
+                                                            <td>San Francisco</td>
+                                                            <td>66</td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="text-center"><input type="checkbox"
+                                                                    class="form-check-input" name="category"></th>
+                                                            <td>Cedric Kelly</td>
+                                                            <td>Senior Javascript Developer</td>
+                                                            <td>Edinburgh</td>
+                                                            <td>22</td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="text-center"><input type="checkbox"
+                                                                    class="form-check-input" name="category"></th>
+                                                            <td>Airi Satou</td>
+                                                            <td>Accountant</td>
+                                                            <td>Tokyo</td>
+                                                            <td>33</td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="text-center"><input type="checkbox"
+                                                                    class="form-check-input" name="category"></th>
+                                                            <td>Brielle Williamson</td>
+                                                            <td>Integration Specialist</td>
+                                                            <td>New York</td>
+                                                            <td>61</td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="text-center"><input type="checkbox"
+                                                                    class="form-check-input" name="category"></th>
+                                                            <td>Herrod Chandler</td>
+                                                            <td>Sales Assistant</td>
+                                                            <td>San Francisco</td>
+                                                            <td>59</td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="text-center"><input type="checkbox"
+                                                                    class="form-check-input" name="category"></th>
+                                                            <td>Rhona Davidson</td>
+                                                            <td>Integration Specialist</td>
+                                                            <td>Tokyo</td>
+                                                            <td>55</td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="text-center"><input type="checkbox"
+                                                                    class="form-check-input" name="category"></th>
+                                                            <td>Colleen Hurst</td>
+                                                            <td>Javascript Developer</td>
+                                                            <td>San Francisco</td>
+                                                            <td>39</td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="text-center"><input type="checkbox"
+                                                                    class="form-check-input" name="category"></th>
+                                                            <td>Sonya Frost</td>
+                                                            <td>Software Engineer</td>
+                                                            <td>Edinburgh</td>
+                                                            <td>23</td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="text-center"><input type="checkbox"
+                                                                    class="form-check-input" name="category"></th>
+                                                            <td>Jena Gaines</td>
+                                                            <td>Office Manager</td>
+                                                            <td>London</td>
+                                                            <td>30</td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="text-center"><input type="checkbox"
+                                                                    class="form-check-input" name="category"></th>
+                                                            <td>Quinn Flynn</td>
+                                                            <td>Support Lead</td>
+                                                            <td>Edinburgh</td>
+                                                            <td>22</td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="text-center"><input type="checkbox"
+                                                                    class="form-check-input" name="category"></th>
+                                                            <td>Charde Marshall</td>
+                                                            <td>Regional Director</td>
+                                                            <td>San Francisco</td>
+                                                            <td>36</td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="text-center"><input type="checkbox"
+                                                                    class="form-check-input" name="category"></th>
+                                                            <td>Haley Kennedy</td>
+                                                            <td>Senior Marketing Designer</td>
+                                                            <td>London</td>
+                                                            <td>43</td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="text-center"><input type="checkbox"
+                                                                    class="form-check-input" name="category"></th>
+                                                            <td>Tatyana Fitzpatrick</td>
+                                                            <td>Regional Director</td>
+                                                            <td>London</td>
+                                                            <td>19</td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="text-center"><input type="checkbox"
+                                                                    class="form-check-input" name="category"></th>
+                                                            <td>Michael Silva</td>
+                                                            <td>Marketing Designer</td>
+                                                            <td>London</td>
+                                                            <td>66</td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="text-center" class="text-center"><input
+                                                                    type="checkbox" class="form-check-input"
+                                                                    name="category"></th>
+                                                            <td>Paul Byrd</td>
+                                                            <td>Chief Financial Officer (CFO)</td>
+                                                            <td>New York</td>
+                                                            <td>64</td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="text-center" class="text-center"><input
+                                                                    type="checkbox" class="form-check-input"
+                                                                    name="category"></th>
+                                                            <td>Gloria Little</td>
+                                                            <td>Systems Administrator</td>
+                                                            <td>New York</td>
+                                                            <td>59</td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="text-center" class="text-center"><input
+                                                                    type="checkbox" class="form-check-input"
+                                                                    name="category"></th>
+                                                            <td>Bradley Greer</td>
+                                                            <td>Software Engineer</td>
+                                                            <td>London</td>
+                                                            <td>41</td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="text-center" class="text-center"><input
+                                                                    type="checkbox" class="form-check-input"
+                                                                    name="category"></th>
+                                                            <td>Dai Rios</td>
+                                                            <td>Personnel Lead</td>
+                                                            <td>Edinburgh</td>
+                                                            <td>35</td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="text-center" class="text-center"><input
+                                                                    type="checkbox" class="form-check-input"
+                                                                    name="category"></th>
+                                                            <td>Jenette Caldwell</td>
+                                                            <td>Development Lead</td>
+                                                            <td>New York</td>
+                                                            <td>30</td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="text-center" class="text-center"><input
+                                                                    type="checkbox" class="form-check-input"
+                                                                    name="category"></th>
+                                                            <td>Yuri Berry</td>
+                                                            <td>Chief Marketing Officer (CMO)</td>
+                                                            <td>New York</td>
+                                                            <td>40</td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="text-center" class="text-center"><input
+                                                                    type="checkbox" class="form-check-input"
+                                                                    name="category"></th>
+                                                            <td>Caesar Vance</td>
+                                                            <td>Pre-Sales Support</td>
+                                                            <td>New York</td>
+                                                            <td>21</td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="text-center"><input type="checkbox"
+                                                                    class="form-check-input" name="category"></th>
+                                                            <td>Doris Wilder</td>
+                                                            <td>Sales Assistant</td>
+                                                            <td>Sidney</td>
+                                                            <td>23</td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="text-center"><input type="checkbox"
+                                                                    class="form-check-input" name="category"></th>
+                                                            <td>Angelica Ramos</td>
+                                                            <td>Chief Executive Officer (CEO)</td>
+                                                            <td>London</td>
+                                                            <td>47</td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="text-center"><input type="checkbox"
+                                                                    class="form-check-input" name="category"></th>
+                                                            <td>Gavin Joyce</td>
+                                                            <td>Developer</td>
+                                                            <td>Edinburgh</td>
+                                                            <td>42</td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="text-center"><input type="checkbox"
+                                                                    class="form-check-input" name="category"></th>
+                                                            <td>Jennifer Chang</td>
+                                                            <td>Regional Director</td>
+                                                            <td>Singapore</td>
+                                                            <td>28</td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="text-center"><input type="checkbox"
+                                                                    class="form-check-input" name="category"></th>
+                                                            <td>Brenden Wagner</td>
+                                                            <td>Software Engineer</td>
+                                                            <td>San Francisco</td>
+                                                            <td>28</td>
+
+                                                        </tr>
+                                                        <!--<tr>
+                                                        <td>Fiona Green</td>
+                                                        <td>Chief Operating Officer (COO)</td>
+                                                        <td>San Francisco</td>
+                                                        <td>48</td>
+                                                        <td>2010/03/11</td>
+                                                        <td>$850,000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Shou Itou</td>
+                                                        <td>Regional Marketing</td>
+                                                        <td>Tokyo</td>
+                                                        <td>20</td>
+                                                        <td>2011/08/14</td>
+                                                        <td>$163,000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Michelle House</td>
+                                                        <td>Integration Specialist</td>
+                                                        <td>Sidney</td>
+                                                        <td>37</td>
+                                                        <td>2011/06/02</td>
+                                                        <td>$95,400</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Suki Burks</td>
+                                                        <td>Developer</td>
+                                                        <td>London</td>
+                                                        <td>53</td>
+                                                        <td>2009/10/22</td>
+                                                        <td>$114,500</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Prescott Bartlett</td>
+                                                        <td>Technical Author</td>
+                                                        <td>London</td>
+                                                        <td>27</td>
+                                                        <td>2011/05/07</td>
+                                                        <td>$145,000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Gavin Cortez</td>
+                                                        <td>Team Leader</td>
+                                                        <td>San Francisco</td>
+                                                        <td>22</td>
+                                                        <td>2008/10/26</td>
+                                                        <td>$235,500</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Martena Mccray</td>
+                                                        <td>Post-Sales support</td>
+                                                        <td>Edinburgh</td>
+                                                        <td>46</td>
+                                                        <td>2011/03/09</td>
+                                                        <td>$324,050</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Unity Butler</td>
+                                                        <td>Marketing Designer</td>
+                                                        <td>San Francisco</td>
+                                                        <td>47</td>
+                                                        <td>2009/12/09</td>
+                                                        <td>$85,675</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Howard Hatfield</td>
+                                                        <td>Office Manager</td>
+                                                        <td>San Francisco</td>
+                                                        <td>51</td>
+                                                        <td>2008/12/16</td>
+                                                        <td>$164,500</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Hope Fuentes</td>
+                                                        <td>Secretary</td>
+                                                        <td>San Francisco</td>
+                                                        <td>41</td>
+                                                        <td>2010/02/12</td>
+                                                        <td>$109,850</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Vivian Harrell</td>
+                                                        <td>Financial Controller</td>
+                                                        <td>San Francisco</td>
+                                                        <td>62</td>
+                                                        <td>2009/02/14</td>
+                                                        <td>$452,500</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Timothy Mooney</td>
+                                                        <td>Office Manager</td>
+                                                        <td>London</td>
+                                                        <td>37</td>
+                                                        <td>2008/12/11</td>
+                                                        <td>$136,200</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Jackson Bradshaw</td>
+                                                        <td>Director</td>
+                                                        <td>New York</td>
+                                                        <td>65</td>
+                                                        <td>2008/09/26</td>
+                                                        <td>$645,750</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Olivia Liang</td>
+                                                        <td>Support Engineer</td>
+                                                        <td>Singapore</td>
+                                                        <td>64</td>
+                                                        <td>2011/02/03</td>
+                                                        <td>$234,500</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Bruno Nash</td>
+                                                        <td>Software Engineer</td>
+                                                        <td>London</td>
+                                                        <td>38</td>
+                                                        <td>2011/05/03</td>
+                                                        <td>$163,500</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Sakura Yamamoto</td>
+                                                        <td>Support Engineer</td>
+                                                        <td>Tokyo</td>
+                                                        <td>37</td>
+                                                        <td>2009/08/19</td>
+                                                        <td>$139,575</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Thor Walton</td>
+                                                        <td>Developer</td>
+                                                        <td>New York</td>
+                                                        <td>61</td>
+                                                        <td>2013/08/11</td>
+                                                        <td>$98,540</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Finn Camacho</td>
+                                                        <td>Support Engineer</td>
+                                                        <td>San Francisco</td>
+                                                        <td>47</td>
+                                                        <td>2009/07/07</td>
+                                                        <td>$87,500</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Serge Baldwin</td>
+                                                        <td>Data Coordinator</td>
+                                                        <td>Singapore</td>
+                                                        <td>64</td>
+                                                        <td>2012/04/09</td>
+                                                        <td>$138,575</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Zenaida Frank</td>
+                                                        <td>Software Engineer</td>
+                                                        <td>New York</td>
+                                                        <td>63</td>
+                                                        <td>2010/01/04</td>
+                                                        <td>$125,250</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Zorita Serrano</td>
+                                                        <td>Software Engineer</td>
+                                                        <td>San Francisco</td>
+                                                        <td>56</td>
+                                                        <td>2012/06/01</td>
+                                                        <td>$115,000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Jennifer Acosta</td>
+                                                        <td>Junior Javascript Developer</td>
+                                                        <td>Edinburgh</td>
+                                                        <td>43</td>
+                                                        <td>2013/02/01</td>
+                                                        <td>$75,650</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Cara Stevens</td>
+                                                        <td>Sales Assistant</td>
+                                                        <td>New York</td>
+                                                        <td>46</td>
+                                                        <td>2011/12/06</td>
+                                                        <td>$145,600</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Hermione Butler</td>
+                                                        <td>Regional Director</td>
+                                                        <td>London</td>
+                                                        <td>47</td>
+                                                        <td>2011/03/21</td>
+                                                        <td>$356,250</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Lael Greer</td>
+                                                        <td>Systems Administrator</td>
+                                                        <td>London</td>
+                                                        <td>21</td>
+                                                        <td>2009/02/27</td>
+                                                        <td>$103,500</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Jonas Alexander</td>
+                                                        <td>Developer</td>
+                                                        <td>San Francisco</td>
+                                                        <td>30</td>
+                                                        <td>2010/07/14</td>
+                                                        <td>$86,500</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Shad Decker</td>
+                                                        <td>Regional Director</td>
+                                                        <td>Edinburgh</td>
+                                                        <td>51</td>
+                                                        <td>2008/11/13</td>
+                                                        <td>$183,000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Michael Bruce</td>
+                                                        <td>Javascript Developer</td>
+                                                        <td>Singapore</td>
+                                                        <td>29</td>
+                                                        <td>2011/06/27</td>
+                                                        <td>$183,000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Donna Snider</td>
+                                                        <td>Customer Support</td>
+                                                        <td>New York</td>
+                                                        <td>27</td>
+                                                        <td>2011/01/25</td>
+                                                        <td>$112,000</td>
+                                                    </tr>-->
+                                                    </tbody>
+                                                </table>
+
                                             </div>
                                         </div>
-                                        <div>
-                                            <button type="submit" class="btn btn-primary w-md">Submit</button>
-                                        </div>
-                                    </form>
-                                </div>
-                                <!-- end card body -->
-                            </div>
-                            <!-- end card -->
+                                    </div> <!-- end col -->
+                                </div> <!-- end row -->
+                            </div> <!-- container-fluid -->
                         </div>
-                        <!-- end col -->
-
-                        <div class="col-lg-6">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h5 class="card-title mb-4">Inline Forms With Hstack</h5>
-
-                                    <div class="hstack gap-3">
-                                        <input class="form-control me-auto" type="text"
-                                            placeholder="Add your item here..." aria-label="Add your item here...">
-                                        <button type="button" class="btn btn-secondary">Submit</button>
-                                        <div class="vr"></div>
-                                        <button type="button" class="btn btn-outline-danger">Reset</button>
-                                    </div>
-
-                                </div>
-                                <!-- end card body -->
-                            </div>
-                            <!-- end card -->
-                        </div>
-                        <!-- end col -->
+                        <!--2nd section starts here-->
                     </div>
-                    <!-- end row -->
-
-                </div> <!-- container-fluid -->
+                </div>
             </div>
             <!-- End Page-content -->
 
@@ -1300,8 +1569,41 @@
     <script src="assets/libs/simplebar/simplebar.min.js"></script>
     <script src="assets/libs/node-waves/waves.min.js"></script>
 
-    <script src="assets/js/app.js"></script>
+    <!-- apexcharts -->
+    <script src="assets/libs/apexcharts/apexcharts.min.js"></script>
 
+    <!-- file-manager js -->
+    <script src="assets/js/pages/file-manager.init.js"></script>
+    <!-- Required datatable js -->
+    <script src="assets/libs/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="assets/libs/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
+    <!-- Datatable init js -->
+    <script src="assets/js/pages/datatables.init.js"></script>
+
+    <script src="assets/js/app.js"></script>
+    <script>
+        function copytext_cat(e) {
+            let ctrC = document.getElementById("cat").value;
+            //alert(ctrC)
+            str = ctrC.replace(/\s+/g, "-").toLowerCase();
+            document.getElementById("cat-slug").value = str;
+        }
+    </script>
+    <script>
+        document.getElementById('select-all').onclick = function () {
+            var checkboxes = document.getElementsByName('category');
+            for (var checkbox of checkboxes) {
+                checkbox.checked = this.checked;
+            }
+        }
+    </script>
+    <script>
+      //  $(document).ready(function(){
+         //   $('input:checkbox').click(function() {
+          //      $('input:checkbox').not(this).prop('checked', false);
+          //  });
+       // });
+    </script>
 </body>
 
 </html>
