@@ -11,6 +11,13 @@
         <!-- App favicon -->
         <link rel="shortcut icon" href="assets/images/favicon.ico">
 
+        <link href="assets/libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/libs/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+
+        <!-- Responsive datatable examples -->
+        <link href="assets/libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css" rel="stylesheet" type="text/css" />     
+
+
         <!-- Bootstrap Css -->
         <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
         <!-- Icons Css -->
@@ -814,46 +821,113 @@
                 <div class="page-content">
                   
                     <div class="row">
-                        <div class="col-xl-4">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h4 class="card-title mb-4">Add Search Tag</h4>
-
-                                    <form>
-                                        <div class="row mb-4">
-                                            <label for="horizontal-firstname-input" class="col-sm-3 col-form-label">Tag</label>
-                                            <div class="col-sm-12">
-                                              <input type="text" class="form-control" id="horizontal-firstname-input" placeholder="Enter Your ">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title mb-4">All Members</h4>
+                                
+                                
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="card">
+                                            <div class="card-body">
+                
+                                                <h4 class="card-title">Default Datatable</h4>
+                                                <p class="card-title-desc">DataTables has most features enabled by
+                                                    default, so all you need to do to use it with your own tables is to call
+                                                    the construction function: <code>$().DataTable();</code>.
+                                                </p>
+                
+                                                <table id="datatable" class="table table-bordered dt-responsive  nowrap w-100">
+                                                    <thead>
+                                                    <tr>
+                                                        <th>Name</th>
+                                                        <th>Position</th>
+                                                        <th>Office</th>
+                                                        <th>Age</th>
+                                                        <th>Start date</th>
+                                                        <th>Salary</th>
+                                                    </tr>
+                                                    </thead>
+                
+                
+                                                    <tbody>
+                                                    <tr>
+                                                        <td>Tiger Nixon</td>
+                                                        <td>System Architect</td>
+                                                        <td>Edinburgh</td>
+                                                        <td>61</td>
+                                                        <td>2011/04/25</td>
+                                                        <td>$320,800</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Garrett Winters</td>
+                                                        <td>Accountant</td>
+                                                        <td>Tokyo</td>
+                                                        <td>63</td>
+                                                        <td>2011/07/25</td>
+                                                        <td>$170,750</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Ashton Cox</td>
+                                                        <td>Junior Technical Author</td>
+                                                        <td>San Francisco</td>
+                                                        <td>66</td>
+                                                        <td>2009/01/12</td>
+                                                        <td>$86,000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Cedric Kelly</td>
+                                                        <td>Senior Javascript Developer</td>
+                                                        <td>Edinburgh</td>
+                                                        <td>22</td>
+                                                        <td>2012/03/29</td>
+                                                        <td>$433,060</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Airi Satou</td>
+                                                        <td>Accountant</td>
+                                                        <td>Tokyo</td>
+                                                        <td>33</td>
+                                                        <td>2008/11/28</td>
+                                                        <td>$162,700</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Brielle Williamson</td>
+                                                        <td>Integration Specialist</td>
+                                                        <td>New York</td>
+                                                        <td>61</td>
+                                                        <td>2012/12/02</td>
+                                                        <td>$372,000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Herrod Chandler</td>
+                                                        <td>Sales Assistant</td>
+                                                        <td>San Francisco</td>
+                                                        <td>59</td>
+                                                        <td>2012/08/06</td>
+                                                        <td>$137,500</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Rhona Davidson</td>
+                                                        <td>Integration Specialist</td>
+                                                        <td>Tokyo</td>
+                                                        <td>55</td>
+                                                        <td>2010/10/14</td>
+                                                        <td>$327,900</td>
+                                                    </tr>
+                                                   
+                                                    </tbody>
+                                                </table>
+                
                                             </div>
                                         </div>
-                                        <div class="row mb-4">
-                                            <label for="horizontal-email-input" class="col-sm-3 col-form-label">Url</label>
-                                            <div class="col-sm-12">
-                                                <input type="email" class="form-control" id="horizontal-email-input" placeholder="Enter Your Email ID">
-                                            </div>
-                                        </div>
-                                      
-
-                                        <div class="row justify-content-end">
-                                            <div class="col-sm-9">
-
-                                                <!-- <div class="form-check mb-4">
-                                                    <input class="form-check-input" type="checkbox" id="horizontalLayout-Check">
-                                                    <label class="form-check-label" for="horizontalLayout-Check">
-                                                        Remember me
-                                                    </label>
-                                                </div> -->
-
-                                                <div>
-                                                    <button type="submit" class="btn btn-primary w-md">Submit</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-                                <!-- end card body -->
+                                    </div> <!-- end col -->
+                                </div> <!-- end row -->
+                
+                             
+    
+    
                             </div>
-                            <!-- end card -->
                         </div>
                     </div>
 
@@ -951,10 +1025,32 @@
         <!-- apexcharts -->
         <script src="assets/libs/apexcharts/apexcharts.min.js"></script>
 
+          <!-- Responsive examples -->
+          <script src="assets/libs/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+          <script src="assets/libs/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js"></script>
+  
+          <!-- Datatable init js -->
+          <script src="assets/js/pages/datatables.init.js"></script>    
+
         <!-- file-manager js -->
         <script src="assets/js/pages/file-manager.init.js"></script>
 
         <script src="assets/js/app.js"></script>
-
+        <script>
+            function copytext_cat(e) {
+                let ctrC = document.getElementById("cat").value;
+                //alert(ctrC)
+                str = ctrC.replace(/\s+/g, "-").toLowerCase();
+                document.getElementById("cat-slug").value = str;
+            }
+        </script>
+        <script>
+            document.getElementById('select-all').onclick = function () {
+                var checkboxes = document.getElementsByName('category');
+                for (var checkbox of checkboxes) {
+                    checkbox.checked = this.checked;
+                }
+            }
+        </script>
     </body>
 </html>
