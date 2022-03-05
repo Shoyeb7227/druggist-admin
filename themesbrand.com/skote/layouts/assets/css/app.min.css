@@ -4606,19 +4606,15 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > td.dtr-control:before {
 }
 /*# sourceMappingURL=app.min.css.map */
 
-
-
 /* Board member : Start //Shoyeb */
-.profile-pic-box span
-{
+.profile-pic-box span {
   background-color: #afa5a5;
 }
-.prof-pic span
-{
+.prof-pic span {
   background: #afa5a5;
-    padding: 20px;
-    width: 80px;
-    height: 80px;
+  padding: 20px;
+  width: 80px;
+  height: 80px;
 }
 /* .scroll-tab-tick
 {
@@ -4629,38 +4625,32 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > td.dtr-control:before {
 
 /* Board member : End //Shoyeb */
 /*  Home Feature Section : Start // Shoyeb */
-.tag-x-cut
-{
+.tag-x-cut {
   display: flex;
-    flex-wrap: wrap;
-    padding: 23px 0;
-
-   
+  flex-wrap: wrap;
+  padding: 23px 0;
 }
 
-.board-member-search .scope-control
-{
+.board-member-search .scope-control {
   border: none;
-    height: 38px;
-    padding-left: 40px;
-    padding-right: 20px;
-    background-color: #f3f3f9;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    border-radius: 5px;
+  height: 38px;
+  padding-left: 40px;
+  padding-right: 20px;
+  background-color: #f3f3f9;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-radius: 5px;
 }
-.scope-control
-{
+.scope-control {
   display: block;
-    width: 100%;
-    padding: 0.47rem 0.75rem;
-    font-size: .8125rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #495057;
-    width: 250px;
-    position: relative;
-
+  width: 100%;
+  padding: 0.47rem 0.75rem;
+  font-size: 0.8125rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  width: 250px;
+  position: relative;
 }
 /* .scope-control::before
 {
@@ -4668,25 +4658,22 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > td.dtr-control:before {
   position: absolute;
 } */
 
-.search-scp
-{
+.search-scp {
   position: absolute;
   top: 11px;
   left: 14px;
   font-size: 17px;
 }
-.tag-x-cut >  div
-{
-  margin:10px;
-  padding:10px 20px;
-  background-color:#d9d9d9;
+.tag-x-cut > div {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #d9d9d9;
   color: #8c8f93;
   border-radius: 10px;
   border-radius: 50px;
 }
-.cross-cut-btn
-{
-  border:none;
+.cross-cut-btn {
+  border: none;
   background-color: transparent;
 }
 
@@ -4697,105 +4684,85 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > td.dtr-control:before {
   margin: 0 auto 25px 2px;
   padding: 25px;
   color: #8d9499;
-  color: #97A1A8;
+  color: #97a1a8;
   background: #fff;
-  border: 2px dashed #C8CBCE;
+  border: 2px dashed #c8cbce;
   text-align: center;
   -webkit-transition: box-shadow 0.3s, border-color 0.3s;
   -moz-transition: box-shadow 0.3s, border-color 0.3s;
   transition: box-shadow 0.3s, border-color 0.3s;
 }
-.accordion-body
-{
+.accordion-body {
   padding: 0px;
 }
-.toast-img img
-{
+.toast-img img {
   height: 89px;
   width: 80px;
   object-fit: cover;
 }
-.toast-content
-{
+.toast-content {
   padding: 5px 10px;
   margin: auto;
-
 }
-.toast-content p
-{
+.toast-content p {
   margin: 0px;
   padding: 0px;
   line-height: 16px;
 }
-.toast-white
-{
+.toast-white {
   background-color: #eff2f7;
 }
-.toast-content button
-{
+.toast-content button {
   padding: 10px;
 }
 
-
-.toast-img-01 img
-{
+.toast-img-01 img {
   height: 89px;
   width: 80px;
   object-fit: cover;
 }
-.toast-content-01
-{
+.toast-content-01 {
   padding: 5px 10px;
   margin: auto;
-
 }
-.toast-content-01 p
-{
+.toast-content-01 p {
   margin: 0px;
   padding: 0px;
   line-height: 16px;
 }
-.toast-white-01
-{
+.toast-white-01 {
   background-color: #eff2f7;
 }
-.toast-content-01 button
-{
+.toast-content-01 button {
   /* padding: 30px; */
 }
 
 /* Home Feature : End // Shoyeb */
 /* Add post page  : End // Shoyeb */
-.cta-div
-{
+.cta-div {
   display: flex;
   align-items: center;
-  justify-content: space-between;  
-  border:1px solid #eee;
+  justify-content: space-between;
+  border: 1px solid #eee;
   padding: 10px 15px;
   max-width: 400px;
   border-radius: 10px;
-
 }
-.cta-div img
-{
+.cta-div img {
   height: 70px;
   width: 70px;
   border-radius: 50%;
 }
-.cta-div button
-{
+.cta-div button {
   border: none;
   background-color: transparent;
 }
-.cta-content h4
-{
+.cta-content h4 {
   margin: 0px auto;
-    font-size: 14px;
-    font-weight: 600;
+  font-size: 14px;
+  font-weight: 600;
 }
-.cta-content p 
-{
+.cta-content p {
   margin: 0px auto;
   font-size: 13px;
   font-weight: 400;
@@ -4803,14 +4770,11 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > td.dtr-control:before {
 
 /* Add post page : End // Shoyeb */
 
-
 .Neon {
   font-family: sans-serif;
   font-size: 14px;
   color: #494949;
   position: relative;
-  
-
 }
 .Neon * {
   -webkit-box-sizing: border-box;
@@ -4824,17 +4788,19 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > td.dtr-control:before {
   margin: 0 auto 25px auto;
   padding: 25px;
   color: #8d9499;
-  color: #97A1A8;
+  color: #97a1a8;
   background: #fff;
-  border: 2px dashed #C8CBCE;
+  border: 2px dashed #c8cbce;
   text-align: center;
   -webkit-transition: box-shadow 0.3s, border-color 0.3s;
   -moz-transition: box-shadow 0.3s, border-color 0.3s;
   transition: box-shadow 0.3s, border-color 0.3s;
 }
 
-
 /* arbaaz css start here */
+.add_New_category {
+  display: none;
+}
 .add_post_side_bar .form-check-label,
 .check_title {
   font-size: 15px;
@@ -4850,4 +4816,4 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > td.dtr-control:before {
 .icon_text_link i {
   font-size: 25px;
 }
- /* arbaaz css start end   */
+/* arbaaz css start end   */
