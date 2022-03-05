@@ -4832,3 +4832,22 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > td.dtr-control:before {
   -moz-transition: box-shadow 0.3s, border-color 0.3s;
   transition: box-shadow 0.3s, border-color 0.3s;
 }
+
+
+/* arbaaz css start here */
+.add_post_side_bar .form-check-label,
+.check_title {
+  font-size: 15px;
+}
+
+.category_body_section {
+  height: 300px;
+  overflow-y: scroll;
+}
+.icon_text_link {
+  font-size: 14px;
+}
+.icon_text_link i {
+  font-size: 25px;
+}
+ /* arbaaz css start end   */
