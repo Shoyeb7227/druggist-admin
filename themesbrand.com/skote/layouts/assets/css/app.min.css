@@ -4692,6 +4692,29 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > td.dtr-control:before {
 
 
 /*************************Category page ends here******************************/
+/**********************************product page start***********************************/
+.posts-add-new-post button{
+margin-left: 25px;
+padding: 10px 20px 10px 20px;
+}
+.app-search input{
+  width: 90%;
+  background: #dae1ec;
+  border-radius: 0px !important;
+  border: 1px solid #b9bfc4;
+}
+.table-data-icons i{
+  margin: 0px 15px 0px 8px;
+  font-size: 20px;
+}
+th .status{
+  background: #0e50f9;
+    padding: 5px 0px 3px 20px;
+    border-radius: 20px;
+    color: white;
+    margin-bottom: 0px;
+}
+/**********************************product page end***********************************/
 /************************Add New Product**************************************/
 .Neon {
   font-family: sans-serif;
@@ -4717,6 +4740,76 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > td.dtr-control:before {
   margin-left: -9px;
   width: 50%;
 }
+/*********************input for tags***************************/
+.tags-one .bootstrap-tagsinput{
+  margin: 0px 10px 0px 10px;
+}
+.tags-one .bootstrap-tagsinput input{
+width: 600px;
+}
+.tags-two .bootstrap-tagsinput{
+  margin: 0px 10px 0px 10px;
+}
+.tags-two .bootstrap-tagsinput input{
+width: 600px;
+}
+.label-info {
+  background-color: #d0f1ff !important;
+  padding: 7px 18px 6px 18px !important;
+  margin: 8px 2px 2px 2px;
+  color: #95adb7 !important;
+  border-radius: 15px;
+}
+.tags label{
+  border-radius: 8px;
+  margin: 3px;
+}
 
-
+.page-content-new label{
+  font-weight: 400 !important;
+  color: #d2d3db;
+}
 /*****************************Add New Product*************************************/
+/*****************************main navigation section ends*************************************/
+.main-navigation-section{
+  background: white;
+    border-radius: 7px;
+    margin: 0px 15px 0px 10px;
+    padding: 0px 20px 0px 25px;
+    border-radius: 8px;
+    border: 1px solid #e0e1e2;
+    width: 90%;
+}
+.main-navigation-section .sub-check{
+  background:#fcfdfe;
+  padding: 10px 5px 10px 30px;
+  margin: 0px 0px 10px 10px ;
+  border-radius: 8px;
+  border: 1px solid #e0e1e2;
+}
+
+.main-navigation-section .form-check-input[type=checkbox] {
+  border-radius: 1px;
+  border-color: #0e50f9;
+  border-width: 3px;
+}
+.category-select select{
+  width: 300px;
+  background:#fcfdfe;
+  border-radius: 8px;
+  margin: 0px 0px 10px 10px;
+}
+.main-navigation-section h6{
+  color: #bec0cc;
+  margin: 10px 0px 10px 10px;
+}
+.main-navigation-section span{
+  font-size: 10px;
+  color:  black;
+  margin: 10px 0px 5px 10px;
+}
+.main-navigation-section .add-btn{
+  background: #0a65ff;
+  margin-left: 12px;
+}
+/*****************************main navigation section ends*************************************/
