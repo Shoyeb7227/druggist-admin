@@ -4816,4 +4816,32 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > td.dtr-control:before {
 .icon_text_link i {
   font-size: 25px;
 }
+.image {
+  width: 36px;
+  height: 36px;
+  background-color: gray;
+}
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.member_info {
+  max-width: 200px;
+}
+
+.baord_member_item {
+  background-color: #eff2f7;
+}
+
+.baord_member_item .member_info h2 {
+  font-size: 14px;
+  margin-bottom: 0px;
+  color: #6c6c6c;
+}
+
+.baord_member_item .member_info span {
+  font-size: 12px;
+}
 /* arbaaz css start end   */
