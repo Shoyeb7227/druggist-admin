@@ -881,17 +881,16 @@
                                 <div class="col-md-6">
                                     <div class="d-flex">
                                         <div class="cta-box">
-                                            <div class="Neon Neon-theme-dragdropbox">
-                                                <input
-                                                    style="z-index: 999; opacity: 0; width: 320px; height: 200px; position: absolute; right: 0px; left: 0px; margin-right: auto; margin-left: auto;"
-                                                    name="files[]" id="filer_input2" multiple="multiple" type="file">
-                                                <div class="Neon-input-dragDrop">
-                                                    <div class="Neon-input-inner">
-                                                        <div class="Neon-input-icon"><i class="fa fa-file-image-o"></i>
-                                                        </div>
-                                                    </div>
+                                            <div class="center">
+                                                <div class="form-input">
+                                                  <div class="preview">
+                                                    <img id="file-ip-1-preview">
+                                                  </div>
+                                                  <label for="file-ip-1"></label>
+                                                  <input type="file" id="file-ip-1" accept="image/*" onchange="showPreview(event);">
+                                                  
                                                 </div>
-                                            </div>
+                                              </div>
                                         </div>
                                         <p class="cta-add">Add CTA Vector</p>
                                     </div>
@@ -937,7 +936,7 @@
                             </div>
 
                             <div>
-                                <button type="submit" class="btn btn-add w-md"><i class="fa fa-plus-circle mx-2"
+                                <button type="submit" class="btn btn-add w-md btn-primary"><i class="fa fa-plus-circle mx-2"
                                         aria-hidden="true"></i>Add Deep Link</button>
                             </div>
                         </form>
@@ -971,7 +970,7 @@
     <!-- END layout-wrapper -->
 
     <!-- Right Sidebar -->
-    <div class="right-bar">
+    <dcat-new-proiv class="right-bar">
         <div data-simplebar class="h-100">
             <div class="rightbar-title d-flex align-items-center px-3 py-4">
 
