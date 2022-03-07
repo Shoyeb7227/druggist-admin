@@ -866,86 +866,47 @@
         <!-- ============================================================== -->
         <div class="main-content">
 
-
-
             <div class="page-content">
-                <h3 class="mx-5">Add Deep Link</h3>
-                <div class="card mt-5 mx-5">
-                    <div class="card-body my-4 mx-3">
-
-
-                        <form>
-
-                            <div class="row">
-
-                                <div class="col-md-6">
-                                    <div class="d-flex">
-                                        <div class="cta-box">
-                                            <div class="center">
-                                                <div class="form-input">
-                                                  <div class="preview">
-                                                    <img id="file-ip-1-preview">
-                                                  </div>
-                                                  <label for="file-ip-1"></label>
-                                                  <input type="file" id="file-ip-1" accept="image/*" onchange="showPreview(event);">
-                                                  
-                                                </div>
-                                              </div>
-                                        </div>
-                                        <p class="cta-add">Add CTA Vector</p>
-                                    </div>
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-lg-4"></div>
+                            <div class="col-lg-4">
+                                <div class="mb-3">
+                                    <label for="formrow-email-input" class="form-label">Product Name</label>
+                                    <input type="email" class="form-control" id="formrow-email-input"
+                                        placeholder="Product Name">
                                 </div>
-
-                                <div class="col-md-3">
-                                    <div class="mb-3 mt-4">
-                                        <label for="formrow-email-input" class="form-label">TITLE</label>
-                                        <input type="email" class="form-control" id="formrow-email-input"
-                                            placeholder="Title">
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="mb-3 mt-4 mx-3">
-                                        <label for="formrow-password-input" class="form-label">SHORT DETAILS</label>
-                                        <input type="password" class="form-control" id="Short Details"
-                                            placeholder="Enter Your Password">
-                                    </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="mb-3">
+                                    <label for="formrow-email-input" class="form-label">SKU</label>
+                                    <input type="email" class="form-control" id="formrow-email-input"
+                                        placeholder="Stock Keeping Unit">
                                 </div>
                             </div>
 
-                            <div class="row">
-
-                                <div class="col-lg-4">
-                                    <div class="mb-3 mt-4">
-                                        <label for="formrow-inputState" class="form-label">SELECT CATEGORY</label>
-                                        <select id="formrow-inputState" class="form-select">
-                                            <option selected>Select</option>
-                                            <option>...</option>
-                                        </select>
-
-                                    </div>
-
-                                </div>
-
-                                <div class="col-lg-4">
-                                    <div class="mb-3 mt-4">
-                                        <label for="formrow-inputZip" class="form-label">ADD PRODUCT PAGE URL</label>
-                                        <input type="text" class="form-control" id="formrow-inputZip"
-                                            placeholder="example: www.druggist.com">
+                            <div class="col-lg-6">
+                                <div class="mb-3">
+                                    <label class="form-label">Textarea</label>
+                                    <div>
+                                        <textarea required class="form-control" rows="3"></textarea>
                                     </div>
                                 </div>
                             </div>
-
-                            <div>
-                                <button type="submit" class="btn btn-add w-md btn-primary"><i class="fa fa-plus-circle mx-2"
-                                        aria-hidden="true"></i>Add Deep Link</button>
+                            <div class="col-lg-6">
+                                <div class="mb-3">
+                                    <label class="form-label">Textarea</label>
+                                    <div>
+                                        <textarea required class="form-control" rows="3"></textarea>
+                                    </div>
+                                </div>
                             </div>
-                        </form>
+                        </div>
                     </div>
-                    <!-- end card body -->
                 </div>
 
             </div>
-
             <!-- End Page-content -->
 
 
@@ -970,7 +931,7 @@
     <!-- END layout-wrapper -->
 
     <!-- Right Sidebar -->
-    <dcat-new-proiv class="right-bar">
+    <div class="right-bar">
         <div data-simplebar class="h-100">
             <div class="rightbar-title d-flex align-items-center px-3 py-4">
 
