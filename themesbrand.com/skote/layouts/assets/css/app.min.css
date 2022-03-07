@@ -4605,262 +4605,211 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > td.dtr-control:before {
   margin: 0 auto;
 }
 /*# sourceMappingURL=app.min.css.map */
-
-/* Board member : Start //Shoyeb */
-.profile-pic-box span {
-  background-color: #afa5a5;
-}
-.prof-pic span {
-  background: #afa5a5;
-  padding: 20px;
-  width: 80px;
-  height: 80px;
-}
-/* .scroll-tab-tick
-{
-  display: flex;
-  justify-content: flex-start;
-  overflow-x: scroll;
-} */
-
-/* Board member : End //Shoyeb */
-/*  Home Feature Section : Start // Shoyeb */
-.tag-x-cut {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 23px 0;
-}
-
-.board-member-search .scope-control {
-  border: none;
-  height: 38px;
-  padding-left: 40px;
-  padding-right: 20px;
-  background-color: #f3f3f9;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  border-radius: 5px;
-}
-.scope-control {
-  display: block;
-  width: 100%;
-  padding: 0.47rem 0.75rem;
-  font-size: 0.8125rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #495057;
-  width: 250px;
-  position: relative;
-}
-/* .scope-control::before
-{
-  content: "\eb2d";
-  position: absolute;
-} */
-
-.search-scp {
-  position: absolute;
-  top: 11px;
-  left: 14px;
-  font-size: 17px;
-}
-.tag-x-cut > div {
-  margin: 10px;
-  padding: 10px 20px;
-  background-color: #d9d9d9;
-  color: #8c8f93;
-  border-radius: 10px;
-  border-radius: 50px;
-}
-.cross-cut-btn {
-  border: none;
-  background-color: transparent;
-}
-
-.Neon-input-dragDrop-01 {
-  display: block;
-  width: 100px;
-  height: 100px;
-  margin: 0 auto 25px 2px;
-  padding: 25px;
-  color: #8d9499;
-  color: #97a1a8;
-  background: #fff;
-  border: 2px dashed #c8cbce;
+/********************************************************************************************************************/
+/*************************Category page start here******************************/
+.container-category .checkbox-select-date {
+  background-color: #dae1ec;
+  border-radius: 4px;
+  padding: 10px 10px 10px 1px;
   text-align: center;
-  -webkit-transition: box-shadow 0.3s, border-color 0.3s;
-  -moz-transition: box-shadow 0.3s, border-color 0.3s;
-  transition: box-shadow 0.3s, border-color 0.3s;
-}
-.accordion-body {
-  padding: 0px;
-}
-.toast-img img {
-  height: 89px;
-  width: 80px;
-  object-fit: cover;
-}
-.toast-content {
-  padding: 5px 10px;
-  margin: auto;
-}
-.toast-content p {
-  margin: 0px;
-  padding: 0px;
-  line-height: 16px;
-}
-.toast-white {
-  background-color: #eff2f7;
-}
-.toast-content button {
-  padding: 10px;
+  width: 165px;
+  margin-bottom: 5px;
 }
 
-.toast-img-01 img {
-  height: 89px;
-  width: 80px;
-  object-fit: cover;
+.container-category .select-bulk-cat {
+  background-color: #dae1ec;
+  border-radius: 4px;
+  padding: 13px 10px 10px 15px;
+  text-align: center;
+  width: 180px;
 }
-.toast-content-01 {
-  padding: 5px 10px;
-  margin: auto;
+.container-category .fa-audible{
+  margin: 15px;
+  font-size: 20px;
+  color: #0a65ff;
 }
-.toast-content-01 p {
-  margin: 0px;
-  padding: 0px;
-  line-height: 16px;
+.container-category .add-btn{
+  background-color: #0a65ff;
 }
-.toast-white-01 {
-  background-color: #eff2f7;
-}
-.toast-content-01 button {
-  /* padding: 30px; */
-}
-
-/* Home Feature : End // Shoyeb */
-/* Add post page  : End // Shoyeb */
-.cta-div {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border: 1px solid #eee;
-  padding: 10px 15px;
-  max-width: 400px;
-  border-radius: 10px;
-}
-.cta-div img {
-  height: 70px;
-  width: 70px;
-  border-radius: 50%;
-}
-.cta-div button {
-  border: none;
-  background-color: transparent;
-}
-.cta-content h4 {
-  margin: 0px auto;
-  font-size: 14px;
-  font-weight: 600;
-}
-.cta-content p {
-  margin: 0px auto;
-  font-size: 13px;
-  font-weight: 400;
-}
-
-/* Add post page : End // Shoyeb */
-/* Parent Category page : Start // Shoyeb */
-.category-toast-content
-{
-    margin: auto;
+.container-category .apply-btn{
+  padding: 10px 15px 10px 15px;
   
 }
-.category-toast-content h4
-{
-  font-size: 18px;
-
+.container-category  .input-group-category .input-custom input{
+  padding:15px 11px 15px 15px;
+  width: 370px;
+ }
+ .container-category .input-group-category .input-custom select{
+  padding:15px 11px 15px 15px;
+  width: 370px;
+ }
+ .container-category textarea{
+  resize: none;
+  padding: 15px 5px 5px 15px;
+ }
+ .container-category .input-group-category{
+   margin: 0px 0px 0px 30px;
+ }
+ .container-category .header-container  h4{
+   margin-left: 32px;
+   margin-bottom: 40px;
+ }
+ .container-category .filter-button .form-check-input[type=checkbox]{
+   border-radius: 0px ;
+   margin-left: 10px;
+   border-color: white;
+ }
+ .container-category #datatable .form-check-input[type=checkbox]{
+   border-radius: 0px ;
+   text-align: center;
+ }
+ /*radio button for select option*/
+ .container-category  input[type="radio"] {
+  display: none;
 }
-.edit-cat-parent
-{
-  background-color: transparent;
+.container-category input[type="radio"] + label {
+  display: inline-block;
+  cursor: pointer;
+}
+.container-category  input[type="radio"] + label:before {
+  content: "";
+  display: inline-block;
+  position: relative;
+  border: 1px solid #000;
+  border-radius:50px;
+  width: 20px;
+  height: 20px;
+  margin:0 10px;
+  border-radius: 0px;
+}
+.container-category  input[type="radio"]:checked + label:before {
+  content: "✔";
+  font-family: 'lucida grande';
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+}
+
+
+/*************************Category page ends here******************************/
+/**********************************product pagestart***********************************/
+.posts-add-new-post button{
+margin-left: 25px;
+padding: 10px 20px 10px 20px;
+}
+.app-search input{
+  width: 90%;
+  background: #dae1ec;
+  border-radius: 0px !important;
+  border: 1px solid #b9bfc4;
+}
+.table-data-icons i{
+  margin: 0px 15px 0px 8px;
   font-size: 20px;
-  border: none;
-  padding: 20px;
 }
-/* Parent Category page : End // Shoyeb */
-
+th .status{
+  background: #0e50f9;
+    padding: 5px 0px 3px 20px;
+    border-radius: 20px;
+    color: white;
+    margin-bottom: 0px;
+}
+/**********************************product page end***********************************/
+/************************Add New Product**************************************/
 .Neon {
   font-family: sans-serif;
   font-size: 14px;
   color: #494949;
   position: relative;
+  
+
+}
+.cta-box{
+  height: 100px;
+  width: 100px;
+  background-color: #dedede;
+  margin: 10px;
 }
 .Neon * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-.Neon-input-dragDrop {
-  display: block;
-  width: 100px;
-  height: 100px;
-  margin: 0 auto 25px auto;
-  padding: 25px;
-  color: #8d9499;
-  color: #97a1a8;
-  background: #fff;
-  border: 2px dashed #c8cbce;
-  text-align: center;
-  -webkit-transition: box-shadow 0.3s, border-color 0.3s;
-  -moz-transition: box-shadow 0.3s, border-color 0.3s;
-  transition: box-shadow 0.3s, border-color 0.3s;
+.page-content-new .cat-new-pro{
+  position: absolute;
+  margin-left: -9px;
+  width: 50%;
+}
+/*********************input for tags***************************/
+.tags-one .bootstrap-tagsinput{
+  margin: 0px 10px 0px 10px;
+}
+.tags-one .bootstrap-tagsinput input{
+width: 600px;
+}
+.tags-two .bootstrap-tagsinput{
+  margin: 0px 10px 0px 10px;
+}
+.tags-two .bootstrap-tagsinput input{
+width: 600px;
+}
+.label-info {
+  background-color: #d0f1ff !important;
+  padding: 7px 18px 6px 18px !important;
+  margin: 8px 2px 2px 2px;
+  color: #95adb7 !important;
+  border-radius: 15px;
+}
+.tags label{
+  border-radius: 8px;
+  margin: 3px;
 }
 
-/* arbaaz css start here */
-.add_New_category {
-  display: none;
+.page-content-new label{
+  font-weight: 400 !important;
+  color: #d2d3db;
 }
-.add_post_side_bar .form-check-label,
-.check_title {
-  font-size: 15px;
+/*****************************Add New Product*************************************/
+/*****************************main navigation section ends*************************************/
+.main-navigation-section{
+  background: white;
+    border-radius: 7px;
+    margin: 0px 15px 0px 10px;
+    padding: 0px 20px 0px 25px;
+    border-radius: 8px;
+    border: 1px solid #e0e1e2;
+    width: 90%;
 }
-
-.category_body_section {
-  height: 300px;
-  overflow-y: scroll;
-}
-.icon_text_link {
-  font-size: 14px;
-}
-.icon_text_link i {
-  font-size: 25px;
-}
-.image {
-  width: 36px;
-  height: 36px;
-  background-color: gray;
-}
-.image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-}
-.member_info {
-  max-width: 200px;
+.main-navigation-section .sub-check{
+  background:#fcfdfe;
+  padding: 10px 5px 10px 30px;
+  margin: 0px 0px 10px 10px ;
+  border-radius: 8px;
+  border: 1px solid #e0e1e2;
 }
 
-.baord_member_item {
-  background-color: #eff2f7;
+.main-navigation-section .form-check-input[type=checkbox] {
+  border-radius: 1px;
+  border-color: #0e50f9;
+  border-width: 3px;
 }
-
-.baord_member_item .member_info h2 {
-  font-size: 14px;
-  margin-bottom: 0px;
-  color: #6c6c6c;
+.category-select select{
+  width: 300px;
+  background:#fcfdfe;
+  border-radius: 8px;
+  margin: 0px 0px 10px 10px;
 }
-
-.baord_member_item .member_info span {
-  font-size: 12px;
+.main-navigation-section h6{
+  color: #bec0cc;
+  margin: 10px 0px 10px 10px;
 }
-/* arbaaz css start end   */
+.main-navigation-section span{
+  font-size: 10px;
+  color:  black;
+  margin: 10px 0px 5px 10px;
+}
+.main-navigation-section .add-btn{
+  background: #0a65ff;
+  margin-left: 12px;
+}
+/*****************************main navigation section ends*************************************/

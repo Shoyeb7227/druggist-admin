@@ -19,7 +19,9 @@
     <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
     <!-- App Css-->
     <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
-
+    <!--tags-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://bootstrap-tagsinput.github.io/bootstrap-tagsinput/dist/bootstrap-tagsinput.css">
 </head>
 
 <body data-sidebar="dark">
@@ -870,9 +872,10 @@
 
 
 
-            <div class="page-content-new">
-                <div class="header-container mt-5">
-                <h3 class="mx-5 mt-5">ADD New Product</h3></div>
+            <div class="page-content">
+                <div class="container mt-5">
+                    <h3 class="mx-5 mt-5">ADD New Product</h3>
+                </div>
                 <div class="card mt-5 mx-5">
                     <div class="card-body my-4 mx-3">
 
@@ -918,14 +921,27 @@
                             <div class="row">
                                 <div class="col-lg-6">
                                     <label for="">Product Description</label>
-                                    <textarea class="form-control" name="" id="" cols="5" rows="7" placeholder="wysiwyg box here"></textarea>
+                                    <textarea class="form-control" name="" id="" cols="5" rows="7"
+                                        placeholder="wysiwyg box here"></textarea>
                                 </div>
                                 <div class="col-lg-6">
                                     <label for="">Product Point</label>
-                                    <textarea class="form-control" name="" id="" cols="5" rows="7" placeholder="wysiwyg box here"></textarea>
+                                    <textarea class="form-control" name="" id="" cols="5" rows="7"
+                                        placeholder="wysiwyg box here"></textarea>
 
                                 </div>
-
+                                <div class="row mt-4 tags">
+                                  
+                                    <div class="tags-one col-lg-6">
+                                        <label for="">strength</label>
+                                        <input type="text" value="" data-role="tagsinput"></input>
+                                    </div>
+                                    
+                                    <div class="tags-two col-lg-6">
+                                        <label for="">Pack Size</label>
+                                        <input type="text" value="" data-role="tagsinput"></input>
+                                    </div>
+                                </div>
                             </div>
                             <div class="row">
                                 <div class="col-lg-6">
@@ -944,7 +960,7 @@
                                                 <input type="text" class="form-control" id="formrow-inputZip"
                                                     placeholder="ihr 450">
                                             </div>
-                                            <div > 
+                                            <div>
                                                 <label for="formrow-inputState" class="form-label ">SELECT
                                                     CATEGORY</label>
                                                 <select id="formrow-inputState" class="form-select cat-new-pro">
@@ -1071,7 +1087,9 @@
 
     <!-- file-manager js -->
     <script src="assets/js/pages/file-manager.init.js"></script>
-
+    <!--tags-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="http://bootstrap-tagsinput.github.io/bootstrap-tagsinput/dist/bootstrap-tagsinput.min.js"></script>
     <script src="assets/js/app.js"></script>
 
 </body>
