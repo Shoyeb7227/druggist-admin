@@ -4874,3 +4874,264 @@ width: 600px;
   margin-left: 12px;
 }
 /*****************************main navigation section ends*************************************/
+
+
+
+/* Board member : Start //Shoyeb */
+.profile-pic-box span {
+  background-color: #afa5a5;
+}
+.prof-pic span {
+  background: #afa5a5;
+  padding: 20px;
+  width: 80px;
+  height: 80px;
+}
+/* .scroll-tab-tick
+{
+  display: flex;
+  justify-content: flex-start;
+  overflow-x: scroll;
+} */
+
+/* Board member : End //Shoyeb */
+/*  Home Feature Section : Start // Shoyeb */
+.tag-x-cut {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 23px 0;
+}
+
+.board-member-search .scope-control {
+  border: none;
+  height: 38px;
+  padding-left: 40px;
+  padding-right: 20px;
+  background-color: #f3f3f9;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-radius: 5px;
+}
+.scope-control {
+  display: block;
+  width: 100%;
+  padding: 0.47rem 0.75rem;
+  font-size: 0.8125rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  width: 250px;
+  position: relative;
+}
+/* .scope-control::before
+{
+  content: "\eb2d";
+  position: absolute;
+} */
+
+.search-scp {
+  position: absolute;
+  top: 11px;
+  left: 14px;
+  font-size: 17px;
+}
+.tag-x-cut > div {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #d9d9d9;
+  color: #8c8f93;
+  border-radius: 10px;
+  border-radius: 50px;
+}
+.cross-cut-btn {
+  border: none;
+  background-color: transparent;
+}
+
+.Neon-input-dragDrop-01 {
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 25px 2px;
+  padding: 25px;
+  color: #8d9499;
+  color: #97a1a8;
+  background: #fff;
+  border: 2px dashed #c8cbce;
+  text-align: center;
+  -webkit-transition: box-shadow 0.3s, border-color 0.3s;
+  -moz-transition: box-shadow 0.3s, border-color 0.3s;
+  transition: box-shadow 0.3s, border-color 0.3s;
+}
+.accordion-body {
+  padding: 0px;
+}
+.toast-img img {
+  height: 89px;
+  width: 80px;
+  object-fit: cover;
+}
+.toast-content {
+  padding: 5px 10px;
+  margin: auto;
+}
+.toast-content p {
+  margin: 0px;
+  padding: 0px;
+  line-height: 16px;
+}
+.toast-white {
+  background-color: #eff2f7;
+}
+.toast-content button {
+  padding: 10px;
+}
+
+.toast-img-01 img {
+  height: 89px;
+  width: 80px;
+  object-fit: cover;
+}
+.toast-content-01 {
+  padding: 5px 10px;
+  margin: auto;
+}
+.toast-content-01 p {
+  margin: 0px;
+  padding: 0px;
+  line-height: 16px;
+}
+.toast-white-01 {
+  background-color: #eff2f7;
+}
+.toast-content-01 button {
+  /* padding: 30px; */
+}
+
+/* Home Feature : End // Shoyeb */
+/* Add post page  : End // Shoyeb */
+.cta-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #eee;
+  padding: 10px 15px;
+  max-width: 400px;
+  border-radius: 10px;
+}
+.cta-div img {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+}
+.cta-div button {
+  border: none;
+  background-color: transparent;
+}
+.cta-content h4 {
+  margin: 0px auto;
+  font-size: 14px;
+  font-weight: 600;
+}
+.cta-content p {
+  margin: 0px auto;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+/* Add post page : End // Shoyeb */
+/* Parent Category page : Start // Shoyeb */
+.category-toast-content
+{
+    margin: auto;
+  
+}
+.category-toast-content h4
+{
+  font-size: 18px;
+
+}
+.edit-cat-parent
+{
+  background-color: transparent;
+  font-size: 20px;
+  border: none;
+  padding: 20px;
+}
+/* Parent Category page : End // Shoyeb */
+
+.Neon {
+  font-family: sans-serif;
+  font-size: 14px;
+  color: #494949;
+  position: relative;
+}
+.Neon * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.Neon-input-dragDrop {
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 25px auto;
+  padding: 25px;
+  color: #8d9499;
+  color: #97a1a8;
+  background: #fff;
+  border: 2px dashed #c8cbce;
+  text-align: center;
+  -webkit-transition: box-shadow 0.3s, border-color 0.3s;
+  -moz-transition: box-shadow 0.3s, border-color 0.3s;
+  transition: box-shadow 0.3s, border-color 0.3s;
+}
+
+/* arbaaz css start here */
+.add_New_category {
+  display: none;
+}
+.add_post_side_bar .form-check-label,
+.check_title {
+  font-size: 15px;
+}
+
+.category_body_section {
+  height: 300px;
+  overflow-y: scroll;
+}
+.icon_text_link {
+  font-size: 14px;
+}
+.icon_text_link i {
+  font-size: 25px;
+}
+.image {
+  width: 36px;
+  height: 36px;
+  background-color: gray;
+}
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.member_info {
+  max-width: 200px;
+}
+
+.baord_member_item {
+  background-color: #eff2f7;
+}
+
+.baord_member_item .member_info h2 {
+  font-size: 14px;
+  margin-bottom: 0px;
+  color: #6c6c6c;
+}
+
+.baord_member_item .member_info span {
+  font-size: 12px;
+}
+/* arbaaz css start end   */
