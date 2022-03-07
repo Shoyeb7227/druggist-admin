@@ -4716,13 +4716,14 @@ th .status{
 }
 /**********************************product page end***********************************/
 /************************Add New Product**************************************/
+/* Sai css */
+
 .Neon {
   font-family: sans-serif;
   font-size: 14px;
   color: #494949;
   position: relative;
   
-
 }
 .cta-box{
   height: 100px;
@@ -4735,11 +4736,71 @@ th .status{
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+
+.cta-add{
+  margin-top: 50px;
+}
+
+.toggle-password {
+  float: right;
+  cursor: pointer;
+  margin-right: 10px;
+  margin-top: -25px;
+}
+
+.tble-img{
+  height: 50px;
+  width: 80px;
+}
+
 .page-content-new .cat-new-pro{
   position: absolute;
   margin-left: -9px;
   width: 50%;
 }
+
+.center {
+  height:100%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+}
+.form-input {
+ width: 100px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.form-input input {
+  display:none;
+
+}
+.form-input label {
+  display:block;
+  width:100px;
+  height:80px;
+
+  line-height:50px;
+  text-align:center;
+  background:#dedede;
+
+  color:#fff;
+  font-size:15px;
+  font-family:"Open Sans",sans-serif;
+  text-transform:Uppercase;
+  font-weight:600;
+  border-radius:5px;
+  cursor:pointer;
+}
+
+.form-input img {
+  width:100%;
+  display:none;
+  margin-bottom:30px;
+}
+
+
+
+/* Saicss End */
 /*********************input for tags***************************/
 .tags-one .bootstrap-tagsinput{
   margin: 0px 10px 0px 10px;
