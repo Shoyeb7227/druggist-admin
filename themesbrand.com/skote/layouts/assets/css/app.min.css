@@ -4998,6 +4998,29 @@ width: 600px;
   padding: 20px;
 }
 /* Parent Category page : End // Shoyeb */
+/* Add product page : Start // Shoyeb */
+.tab-tags-box
+{
+  border: 1px solid #ced4da;
+  height: 67px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px 0;
+  border-radius: 4px;
+}
+.tag-tab-list
+{
+  margin: 10px;
+    padding: 7px 20px;
+    background-color: #d9d9d9;
+    color: #8c8f93;
+    border-radius: 10px;
+    border-radius: 50px;
+    background-color: #daeef4;
+}
+
+
+/* Add product page : End // Shoyeb */
 
 .Neon {
   font-family: sans-serif;
@@ -5074,3 +5097,5 @@ width: 600px;
   font-size: 12px;
 }
 /* arbaaz css start end   */
+
+
