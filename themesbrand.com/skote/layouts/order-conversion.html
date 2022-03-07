@@ -10,18 +10,23 @@
     <meta content="Themesbrand" name="author" />
     <!-- App favicon -->
     <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <!-- DataTables -->
+    <link href="assets/libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/libs/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css" rel="stylesheet"
+        type="text/css" />
+    <!--table data fetch link-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!--font awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
     <!-- Bootstrap Css -->
     <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
     <!-- Icons Css -->
     <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
     <!-- App Css-->
     <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
-    <!--tags-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" href="http://bootstrap-tagsinput.github.io/bootstrap-tagsinput/dist/bootstrap-tagsinput.css">
+    <!--checkbox with single select jquery library-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 </head>
 
 <body data-sidebar="dark">
@@ -870,128 +875,277 @@
         <!-- ============================================================== -->
         <div class="main-content">
 
-
-
             <div class="page-content">
-                <div class="container mt-5">
-                    <h3 class="mx-5 mt-5">ADD New Product</h3>
-                </div>
-                <div class="card mt-5 mx-5">
-                    <div class="card-body my-4 mx-3">
+                <!--container for category page starts here-->
+                <div class="container-datatable">
+                    <div class="header-container">
+                        <h4>ORDER & CONVERSION</h4>
+                    </div>
+
+                    <div class="row ">
+                        <!--2nd section starts here-->
+                        <div class="col-lg-12">
+                            <div class="container-fluid">
 
 
-                        <form>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="d-flex mb-5 mx-2 filter-button">
+                                                    <div>
+                                                        <i class="fa-brands fa-audible"></i>
+                                                    </div>
+                                                    <div class="dropdown">
+                                                        <button class="btn select-bulk-cat  dropdown-toggle"
+                                                            type="button" id="dropdownMenuButton"
+                                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                                            Bulk Action<i class="mdi mdi-chevron-down"></i>
+                                                        </button>
+                                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                            <a class="dropdown-item" href="#">
+                                                                <input type="radio" class="form-control" name="skill"
+                                                                    value="Delete" id="delete">
+                                                                <label for="delete">Delete</label>
+                                                            </a>
+                                                            <a class="dropdown-item" href="#"> <input type="radio"
+                                                                    class="form-control" name="skill" value="Add"
+                                                                    id="add"><label for="add">ADD</label> </a>
 
-                            <div class="row">
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <button class=" btn btn-primary mx-2 apply-btn">Apply</button>
+                                                    </div>
+                                                    <div>
+                                                        <div class="select-category">
 
-                                <div class="col-md-6">
-                                    <div class="d-flex">
-                                        <div class="cta-box">
-                                            <div class="Neon Neon-theme-dragdropbox">
-                                                <input
-                                                    style="z-index: 999; opacity: 0; width: 320px; height: 200px; position: absolute; right: 0px; left: 0px; margin-right: auto; margin-left: auto;"
-                                                    name="files[]" id="filer_input2" multiple="multiple" type="file">
-                                                <div class="Neon-input-dragDrop">
-                                                    <div class="Neon-input-inner">
-                                                        <div class="Neon-input-icon"><i class="fa fa-file-image-o"></i>
+                                                            <div class="dropdown">
+                                                                <button class="btn select-bulk-cat  dropdown-toggle"
+                                                                    type="button" id="dropdownMenuButton"
+                                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                                    Select Category<i class="mdi mdi-chevron-down"></i>
+                                                                </button>
+                                                                <div class="dropdown-menu"
+                                                                    aria-labelledby="dropdownMenuButton">
+                                                                    <a class="dropdown-item" href="#"> <input
+                                                                            type="radio" class="form-control"
+                                                                            name="skill-1" value="male" id="m"><label
+                                                                            for="m">Male</label> </a>
+                                                                    <a class="dropdown-item" href="#"> <input
+                                                                            type="radio" class="form-control"
+                                                                            name="skill-1" value="female" id="f"><label
+                                                                            for="f">Female</label> </a>
+                                                                    <a class="dropdown-item" href="#"><input
+                                                                            type="radio" class="form-control"
+                                                                            name="skill-1" value="other" id="o"> <label
+                                                                            for="o">Other</label></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="mx-2 ">
+
+                                                        <div>
+                                                            <input class="form-control checkbox-select-date" type="date"
+                                                                placeholder="Select Date" id="example-date-input">
                                                         </div>
                                                     </div>
                                                 </div>
+                                                <table id="datatable"
+                                                    class="table table-borderless table-striped     nowrap w-100">
+
+
+                                                    <thead>
+                                                        <tr>
+                                                            <th class="text-center"><input type="checkbox"
+                                                                    class="form-check-input" id="select-all"></th>
+                                                            <th>IMAGE</th>
+                                                            <th>CUSTOMER NAME</th>
+                                                            <th>DATE</th>
+                                                            <th>PRODUCT NAME</th>
+                                                            <th>PRICE</th>
+                                                            <th>PAGE</th>
+                                                            <th>ACTION</th>
+                                                        </tr>
+                                                    </thead>
+
+
+                                                    <tbody>
+                                                        <tr>
+                                                            <th class="text-center"><input type="checkbox"
+                                                                    class="form-check-input" name="category"></th>
+                                                            <td><img src="https://i.ibb.co/BVnRmxD/1200px-Grey-background.jpg" alt="1200px-Grey-background" border="0" width="50" height="50"></td>
+                                                            <td>System Architect</td>
+                                                            <td>Edinburgh</td>
+                                                            <td>61</td>
+                                                            <th>Last Modified</th>
+                                                            <th >INR-250 </th>
+                                                            <th class="table-data-icons"><i class="fa-solid fa-ellipsis"></i></th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="text-center"><input type="checkbox"
+                                                                    class="form-check-input" name="category"></th>
+                                                            <td><img src="https://i.ibb.co/BVnRmxD/1200px-Grey-background.jpg" alt="1200px-Grey-background" border="0" width="50" height="50"></td>
+                                                            <td>Accountant</td>
+                                                            <td>Tokyo</td>
+                                                            <td>63</td>
+                                                            <th>Last Modified</th>
+                                                            <th >INR-250 </th>
+                                                            <th class="table-data-icons"><i class="fa-solid fa-ellipsis"></i></th>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="text-center"><input type="checkbox"
+                                                                    class="form-check-input" name="category"></th>
+                                                            <td><img src="https://i.ibb.co/BVnRmxD/1200px-Grey-background.jpg" alt="1200px-Grey-background" border="0" width="50" height="50"></td>
+                                                            <td>Junior Technical Author</td>
+                                                            <td>San Francisco</td>
+                                                            <td>66</td>
+                                                            <th>Last Modified</th>
+                                                            <th >INR-250 </th>
+                                                            <th class="table-data-icons"><i class="fa-solid fa-ellipsis"></i></th>
+
+                                                        </tr>
+                                                        <!--<tr>
+                                                            <th class="text-center"><input type="checkbox"
+                                                                    class="form-check-input" name="category"></th>
+                                                            <td>Cedric Kelly</td>
+                                                            <td>Senior Javascript Developer</td>
+                                                            <td>Edinburgh</td>
+                                                            <td>22</td>
+                                                            <th>Last Modified</th>
+                                                            <th >INR-250 </th>
+                                                            <th class="table-data-icons"><i class="fa-solid fa-ellipsis"></i></th>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="text-center"><input type="checkbox"
+                                                                    class="form-check-input" name="category"></th>
+                                                            <td>Airi Satou</td>
+                                                            <td>Accountant</td>
+                                                            <td>Tokyo</td>
+                                                            <td>33</td>
+                                                            <th>Last Modified</th>
+                                                            <th >INR-250 </th>
+                                                            <th class="table-data-icons"><i class="fa-solid fa-ellipsis"></i></th>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="text-center"><input type="checkbox"
+                                                                    class="form-check-input" name="category"></th>
+                                                            <td>Brielle Williamson</td>
+                                                            <td>Integration Specialist</td>
+                                                            <td>New York</td>
+                                                            <td>61</td>
+                                                            <th>Last Modified</th>
+                                                            <th >INR-250 </th>
+                                                            <th class="table-data-icons"><i class="fa-solid fa-ellipsis"></i></th>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="text-center"><input type="checkbox"
+                                                                    class="form-check-input" name="category"></th>
+                                                            <td>Herrod Chandler</td>
+                                                            <td>Sales Assistant</td>
+                                                            <td>San Francisco</td>
+                                                            <td>59</td>
+                                                            <th>Last Modified</th>
+                                                            <th >INR-250 </th>
+                                                            <th class="table-data-icons"><i class="fa-solid fa-ellipsis"></i></th>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="text-center"><input type="checkbox"
+                                                                    class="form-check-input" name="category"></th>
+                                                            <td>Rhona Davidson</td>
+                                                            <td>Integration Specialist</td>
+                                                            <td>Tokyo</td>
+                                                            <td>55</td>
+                                                            <th>Last Modified</th>
+                                                            <th >INR-250 </th>
+                                                            <th class="table-data-icons"><i class="fa-solid fa-ellipsis"></i></th>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="text-center"><input type="checkbox"
+                                                                    class="form-check-input" name="category"></th>
+                                                            <td>Colleen Hurst</td>
+                                                            <td>Javascript Developer</td>
+                                                            <td>San Francisco</td>
+                                                            <td>39</td>
+                                                            <th>Last Modified</th>
+                                                            <th >INR-250 </th>
+                                                            <th class="table-data-icons"><i class="fa-solid fa-ellipsis"></i></th>
+
+                                                        </tr>-->
+                                                       
+                                                    </tbody>
+                                                </table>
+
                                             </div>
                                         </div>
-                                        <p class="cta-add">Add CTA Vector</p>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-3">
-                                    <div class="mb-3 mt-4">
-                                        <label for="formrow-email-input" class="form-label">TITLE</label>
-                                        <input type="email" class="form-control" id="formrow-email-input"
-                                            placeholder="Title">
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="mb-3 mt-4 mx-3">
-                                        <label for="formrow-password-input" class="form-label">SHORT DETAILS</label>
-                                        <input type="password" class="form-control" id="Short Details"
-                                            placeholder="Enter Your Password">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <label for="">Product Description</label>
-                                    <textarea class="form-control" name="" id="" cols="5" rows="7"
-                                        placeholder="wysiwyg box here"></textarea>
-                                </div>
-                                <div class="col-lg-6">
-                                    <label for="">Product Point</label>
-                                    <textarea class="form-control" name="" id="" cols="5" rows="7"
-                                        placeholder="wysiwyg box here"></textarea>
-
-                                </div>
-                                <div class="row mt-4 tags">
-                                  
-                                    <div class="tags-one col-lg-6">
-                                        <label for="">strength</label>
-                                        <input type="text" value="" data-role="tagsinput"></input>
-                                    </div>
+                                    </div> <!-- end col -->
                                     
-                                    <div class="tags-two col-lg-6">
-                                        <label for="">Pack Size</label>
-                                        <input type="text" value="" data-role="tagsinput"></input>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <div class="mb-3 mt-4">
-                                        <label for="formrow-inputZip" class="form-label">Price</label>
-                                        <input type="text" class="form-control" id="formrow-inputZip"
-                                            placeholder="ihr 500">
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class=" mb-3 mt-4">
-                                        <div class="d-flex flex-row">
-
-                                            <div class="">
-                                                <label for="formrow-inputZip" class="form-label">Price</label>
-                                                <input type="text" class="form-control" id="formrow-inputZip"
-                                                    placeholder="ihr 450">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="d-flex flex-wrap align-items-start">
+                                                <h5 class="card-title me-2">Visitors</h5>
+                                                <div class="ms-auto">
+                                                    <div class="toolbar d-flex flex-wrap gap-2 text-end">
+                                                        <button type="button" class="btn btn-light btn-sm">
+                                                            ALL
+                                                        </button>
+                                                        <button type="button" class="btn btn-light btn-sm">
+                                                            1M
+                                                        </button>
+                                                        <button type="button" class="btn btn-light btn-sm">
+                                                            6M
+                                                        </button>
+                                                        <button type="button" class="btn btn-light btn-sm active">
+                                                            1Y
+                                                        </button>
+                                                        
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <div>
-                                                <label for="formrow-inputState" class="form-label ">SELECT
-                                                    CATEGORY</label>
-                                                <select id="formrow-inputState" class="form-select cat-new-pro">
-                                                    <option selected>Select</option>
-                                                    <option>...</option>
-                                                </select>
+    
+                                            <div class="row text-center">
+                                                <div class="col-lg-4">
+                                                    <div class="mt-4">
+                                                        <p class="text-muted mb-1">Today</p>
+                                                        <h5>1024</h5>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="col-lg-4">
+                                                    <div class="mt-4">
+                                                        <p class="text-muted mb-1">This Month</p>
+                                                        <h5>12356 <span class="text-success font-size-13">0.2 % <i class="mdi mdi-arrow-up ms-1"></i></span></h5>
+                                                    </div>
+                                                </div>
+    
+                                                <div class="col-lg-4">
+                                                    <div class="mt-4">
+                                                        <p class="text-muted mb-1">This Year</p>
+                                                        <h5>102354 <span class="text-success font-size-13">0.1 % <i class="mdi mdi-arrow-up ms-1"></i></span></h5>
+                                                    </div>
+                                                </div>
                                             </div>
+    
+                                            <hr class="mb-4">
+                                            
+                                            <div class="apex-charts" id="area-chart" dir="ltr"></div>
                                         </div>
                                     </div>
-
-                                </div>
-
-
-                            </div>
-                            <div class="mb-3 mt-4">
-                                <label for="formrow-inputZip" class="form-label">One Global Link</label>
-                                <input type="url" class="form-control" id="formrow-inputZip"
-                                    placeholder="example: www.druggist.com">
-                            </div>
-
-                            <div>
-                                <button class="btn btn-primary mt-3 mt-lg-0 add-btn"><i
-                                        class="fa-solid fa-circle-plus"></i> Add Category</button>
-                            </div>
-                        </form>
+                                </div> <!-- end row -->
+                            </div> <!-- container-fluid -->
+                        </div>
+                        <!--2nd section starts here-->
                     </div>
-                    <!-- end card body -->
                 </div>
-
             </div>
-
             <!-- End Page-content -->
 
 
@@ -1082,16 +1236,42 @@
     <script src="assets/libs/simplebar/simplebar.min.js"></script>
     <script src="assets/libs/node-waves/waves.min.js"></script>
 
+    
+    <!-- file-manager js -->
+    <script src="assets/js/pages/file-manager.init.js"></script>
+    <!-- Required datatable js -->
+    <script src="assets/libs/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="assets/libs/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
     <!-- apexcharts -->
     <script src="assets/libs/apexcharts/apexcharts.min.js"></script>
 
-    <!-- file-manager js -->
-    <script src="assets/js/pages/file-manager.init.js"></script>
-    <!--tags-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="http://bootstrap-tagsinput.github.io/bootstrap-tagsinput/dist/bootstrap-tagsinput.min.js"></script>
-    <script src="assets/js/app.js"></script>
+    <!-- Datatable init js -->
+    <script src="assets/js/pages/datatables.init.js"></script>
 
+    <script src="assets/js/app.js"></script>
+    <script>
+        function copytext_cat(e) {
+            let ctrC = document.getElementById("cat").value;
+            //alert(ctrC)
+            str = ctrC.replace(/\s+/g, "-").toLowerCase();
+            document.getElementById("cat-slug").value = str;
+        }
+    </script>
+    <script>
+        document.getElementById('select-all').onclick = function () {
+            var checkboxes = document.getElementsByName('category');
+            for (var checkbox of checkboxes) {
+                checkbox.checked = this.checked;
+            }
+        }
+    </script>
+    <script>
+      //  $(document).ready(function(){
+         //   $('input:checkbox').click(function() {
+          //      $('input:checkbox').not(this).prop('checked', false);
+          //  });
+       // });
+    </script>
 </body>
 
 </html>

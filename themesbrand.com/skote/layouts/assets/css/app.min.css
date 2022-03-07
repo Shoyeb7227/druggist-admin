@@ -4607,7 +4607,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > td.dtr-control:before {
 /*# sourceMappingURL=app.min.css.map */
 /********************************************************************************************************************/
 /*************************Category page start here******************************/
-.container-category .checkbox-select-date {
+.container-datatable .checkbox-select-date {
   background-color: #dae1ec;
   border-radius: 4px;
   padding: 10px 10px 10px 1px;
@@ -4616,62 +4616,62 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > td.dtr-control:before {
   margin-bottom: 5px;
 }
 
-.container-category .select-bulk-cat {
+.container-datatable .select-bulk-cat {
   background-color: #dae1ec;
   border-radius: 4px;
   padding: 13px 10px 10px 15px;
   text-align: center;
   width: 180px;
 }
-.container-category .fa-audible{
+.container-datatable .fa-audible{
   margin: 15px;
   font-size: 20px;
   color: #0a65ff;
 }
-.container-category .add-btn{
+.container-datatable .add-btn{
   background-color: #0a65ff;
 }
-.container-category .apply-btn{
+.container-datatable .apply-btn{
   padding: 10px 15px 10px 15px;
   
 }
-.container-category  .input-group-category .input-custom input{
+.container-datatable  .input-group-datatable.input-custom input{
   padding:15px 11px 15px 15px;
   width: 370px;
  }
- .container-category .input-group-category .input-custom select{
+ .container-datatable .input-group-datatable .input-custom select{
   padding:15px 11px 15px 15px;
   width: 370px;
  }
- .container-category textarea{
+ .container-datatable textarea{
   resize: none;
   padding: 15px 5px 5px 15px;
  }
- .container-category .input-group-category{
+ .container-datatable .input-group-datatable{
    margin: 0px 0px 0px 30px;
  }
- .container-category .header-container  h4{
+ .container-datatable .header-container  h4{
    margin-left: 32px;
    margin-bottom: 40px;
  }
- .container-category .filter-button .form-check-input[type=checkbox]{
+ .container-datatable .filter-button .form-check-input[type=checkbox]{
    border-radius: 0px ;
    margin-left: 10px;
    border-color: white;
  }
- .container-category #datatable .form-check-input[type=checkbox]{
+ .container-datatable #datatable .form-check-input[type=checkbox]{
    border-radius: 0px ;
    text-align: center;
  }
  /*radio button for select option*/
- .container-category  input[type="radio"] {
+ .container-datatable  input[type="radio"] {
   display: none;
 }
-.container-category input[type="radio"] + label {
+.container-datatable input[type="radio"] + label {
   display: inline-block;
   cursor: pointer;
 }
-.container-category  input[type="radio"] + label:before {
+.container-datatable  input[type="radio"] + label:before {
   content: "";
   display: inline-block;
   position: relative;
@@ -4682,7 +4682,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > td.dtr-control:before {
   margin:0 10px;
   border-radius: 0px;
 }
-.container-category  input[type="radio"]:checked + label:before {
+.container-datatable  input[type="radio"]:checked + label:before {
   content: "✔";
   font-family: 'lucida grande';
   font-size: 14px;
@@ -4692,54 +4692,39 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > td.dtr-control:before {
 
 
 /*************************Category page ends here******************************/
-/**********************************product pagestart***********************************/
+/**********************************product page start***********************************/
 .posts-add-new-post button{
 margin-left: 25px;
 padding: 10px 20px 10px 20px;
 }
 .app-search input{
-  width: 90%;
-  background: #dae1ec;
-  border-radius: 0px !important;
+  width: 70%;
+  background: #dae1ec !important;
+  border-radius: 5px !important;
   border: 1px solid #b9bfc4;
+  margin-left: 86px;
 }
 .table-data-icons i{
   margin: 0px 15px 0px 8px;
   font-size: 20px;
 }
-th .status{
+.container-post th .status{
   background: #0e50f9;
     padding: 5px 0px 3px 20px;
     border-radius: 20px;
     color: white;
     margin-bottom: 0px;
 }
-/**********************************product page end***********************************/
-/************************Add New Product**************************************/
-.Neon {
-  font-family: sans-serif;
-  font-size: 14px;
-  color: #494949;
-  position: relative;
-  
-
-}
-.cta-box{
-  height: 100px;
-  width: 100px;
-  background-color: #dedede;
-  margin: 10px;
-}
-.Neon * {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-.page-content-new .cat-new-pro{
+.app-search span {
   position: absolute;
-  margin-left: -9px;
-  width: 50%;
+  z-index: 10;
+  font-size: 20px;
+  line-height: 38px;
+  left: 96px;
+  top: 0;
+  color: #70819f;
 }
+/**********************************product page end***********************************/
 /*********************input for tags***************************/
 .tags-one .bootstrap-tagsinput{
   margin: 0px 10px 0px 10px;
@@ -4813,3 +4798,21 @@ width: 600px;
   margin-left: 12px;
 }
 /*****************************main navigation section ends*************************************/
+/****************************All User starts here*******************************/
+.container-all-user .user-activity{
+  padding: 1px 6px 0px 7px;
+  background: #d0f1ff;
+  text-align: center;
+  border-radius: 12px;
+  width: 45px;
+}
+.container-all-user .fa-comment{
+  font-size: 30px;
+  color: #c4c4c4;
+}
+.container-all-user .last-modified{
+  color: #9fa9b8;
+  font-size: 12px;
+  font-weight: 200;
+}
+/****************************All User ends here*******************************/
