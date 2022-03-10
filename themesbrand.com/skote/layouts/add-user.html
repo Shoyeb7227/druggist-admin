@@ -1,4 +1,4 @@
-<!doctype html>
+ <!doctype html>
 <html lang="en">
 
 <head>
@@ -605,24 +605,27 @@
                                     <div class="row">
                                         <div class="col-lg-4">
                                             <div class="mb-3">
-                                                <label for="formrow-inputCity" class="form-label">User Name</label>
-                                                <input type="text" class="form-control" id="formrow-inputCity"
-                                                    placeholder="User Name">
+                                                <label for="formrow-username" class="form-label">User Name</label>
+                                                <input type="text" class="form-control" id="user-name" name="user-name"
+                                                   for="formrow-username" placeholder="User Name" required>
+                                                <span class="error UsernameError"></span>
                                             </div>
                                         </div>
                                         <div class="col-lg-4">
                                             <div class="mb-3">
-                                                <label for="formrow-inputCity" class="form-label">First Name</label>
-                                                <input type="text" class="form-control" id="formrow-inputCity"
-                                                    placeholder="First Name">
+                                                <label for="formrow-firstname" class="form-label">First Name</label>
+                                                <input type="text" class="form-control" id="first-name" name="first-name" for="formrow-firstname"
+                                                    placeholder="First Name" required>
+                                                <span class="error firstnameError"></span>
                                             </div>
                                         </div>
 
                                         <div class="col-lg-4">
                                             <div class="mb-3">
-                                                <label for="formrow-inputCity" class="form-label">Last Name</label>
-                                                <input type="text" class="form-control" id="formrow-inputCity"
-                                                    placeholder="Last Name">
+                                                <label for="formrow-lastname" class="form-label">Last Name</label>
+                                                <input type="text" class="form-control" id="last-name" name="last-name" for="formrow-lastname"
+                                                    placeholder="Last Name" required>
+                                                    <span class="error lastnameError"></span>
                                             </div>
                                         </div>
                                     </div>
@@ -630,25 +633,29 @@
                                     <div class="row">
                                         <div class="col-lg-4">
                                             <div class="mb-3">
-                                                <label for="formrow-inputCity" class="form-label">Email </label>
-                                                <input type="text" class="form-control" id="formrow-inputCity"
-                                                    placeholder="Email">
+                                                <label for="formrow-email" class="form-label">Email </label>
+                                                <input type="email" class="form-control" id="formrow-email" name="formrow-email"
+                                                    placeholder="Email" required>
+                                                    <span class="error emailError"></span>
                                             </div>
                                         </div>
                                         <div class="col-lg-4">
                                             <div class="mb-3">
-                                                <label for="formrow-inputCity" class="form-label">New Password</label>
-                                                <input type="password" class="form-control" id="formrow-inputCity"
-                                                    placeholder="New Password">
+                                                <label for="formrow-newpassword" class="form-label">New Password</label>
+                                                <input type="password" class="form-control" id="newpass" name="newpass" for="formrow-newpassword"
+                                                    placeholder="New Password" required>
+                                                    <span class="error newpassError"></span>
                                             </div>
                                         </div>
 
                                         <div class="col-lg-4">
                                             <div class="mb-3">
-                                                <label for="formrow-inputCity" class="form-label">Confirm
+                                                <label for="formrow-confirmpass" class="form-label">Confirm
                                                     Password</label>
                                                 <input type="password" class="form-control"
-                                                    id="horizontal-password-input" placeholder="Confirm Password">
+                                                    id="conform-pass" placeholder="Confirm Password" name="conform-pass" for="formrow-confirmpass">
+
+                                                    <span class="error confirmpassError"></span>
                                             </div>
                                         </div>
                                     </div>
@@ -673,7 +680,7 @@
                                                 </div> -->
 
                                             <div>
-                                                <button type="submit" class="btn btn-primary w-md">Add User</button>
+                                                <button type="submit" class="btn btn-primary w-md" id="adduser" name=""adduser>Add User</button>
                                             </div>
                                         </div>
                                     </div>
@@ -700,7 +707,8 @@
                                                 <th class="text-center">Users </th>
                                                 <th class="text-center">Feature-1</th>
                                                 <th class="text-center">Feature-2</th>
-                                                <th class="text-center">Feature-3</th>
+                                         
+																								<th class="text-center">Feature-3</th>
                                                 <th class="text-center">Feature-4</th>
                                                 <th class="text-center">Feature-5</th>
                                                 <th class="text-center">Feature-6</th>
@@ -716,101 +724,102 @@
                                         <tbody>
                                             <tr>
                                                 <th class="text-center">User-1</th>
+                                                <th class="text-center"><input type="checkbox" class="form-check-input" i
+                                                        id="u1f1" name="u1f1"></th>
                                                 <th class="text-center"><input type="checkbox" class="form-check-input"
-                                                        name="category"></th>
+																									id="u1f2" name="u1f2"></th>
                                                 <th class="text-center"><input type="checkbox" class="form-check-input"
-                                                        name="category"></th>
+																									id="u1f3" name="u1f3"></th>
                                                 <th class="text-center"><input type="checkbox" class="form-check-input"
-                                                        name="category"></th>
+																									id="u2f4" name="u2f4"></th>
                                                 <th class="text-center"><input type="checkbox" class="form-check-input"
-                                                        name="category"></th>
+																									id="u1f5" name="u1f5"></th>
                                                 <th class="text-center"><input type="checkbox" class="form-check-input"
-                                                        name="category"></th>
+																									id="u1f6" name="u1f6"></th>
                                                 <th class="text-center"><input type="checkbox" class="form-check-input"
-                                                        name="category"></th>
+																									id="u1f7" name="u1f7"></th>
                                                 <th class="text-center"><input type="checkbox" class="form-check-input"
-                                                        name="category"></th>
+																									id="u1f8" name="u1f8"></th>
                                                 <th class="text-center"><input type="checkbox" class="form-check-input"
-                                                        name="category"></th>
+																									id="u1f9" name="u1f9"></th>
                                                 <th class="text-center"><input type="checkbox" class="form-check-input"
-                                                        name="category"></th>
-                                                <th class="text-center"><input type="checkbox" class="form-check-input"
-                                                        name="category"></th>
+																									id="u1f10" name="u1f10"></th>
 
                                             </tr>
                                             <tr>
                                                 <th class="text-center">User-2</th>
 
-                                                <th class="text-center"><input type="checkbox" class="form-check-input"
-                                                        name="category"></th>
-                                                <th class="text-center"><input type="checkbox" class="form-check-input"
-                                                        name="category"></th>
-                                                <th class="text-center"><input type="checkbox" class="form-check-input"
-                                                        name="category"></th>
-                                                <th class="text-center"><input type="checkbox" class="form-check-input"
-                                                        name="category"></th>
-                                                <th class="text-center"><input type="checkbox" class="form-check-input"
-                                                        name="category"></th>
-                                                <th class="text-center"><input type="checkbox" class="form-check-input"
-                                                        name="category"></th>
-                                                <th class="text-center"><input type="checkbox" class="form-check-input"
-                                                        name="category"></th>
-                                                <th class="text-center"><input type="checkbox" class="form-check-input"
-                                                        name="category"></th>
-                                                <th class="text-center"><input type="checkbox" class="form-check-input"
-                                                        name="category"></th>
-                                                <th class="text-center"><input type="checkbox" class="form-check-input"
-                                                        name="category"></th>
+                                                <th class="text-center"><input type="checkbox" class="form-check-input" i
+																									id="u2f1" name="u2f1"></th>
+																					<th class="text-center"><input type="checkbox" class="form-check-input"
+																						id="u2f2" name="u2f2"></th>
+																					<th class="text-center"><input type="checkbox" class="form-check-input"
+																						id="u2f3" name="u2f3"></th>
+																					<th class="text-center"><input type="checkbox" class="form-check-input"
+																						id="u2f4" name="u2f4"></th>
+																					<th class="text-center"><input type="checkbox" class="form-check-input"
+																						id="u2f5" name="u2f5"></th>
+																					<th class="text-center"><input type="checkbox" class="form-check-input"
+																						id="u2f6" name="u2f6"></th>
+																					<th class="text-center"><input type="checkbox" class="form-check-input"
+																						id="u2f7" name="u2f7"></th>
+																					<th class="text-center"><input type="checkbox" class="form-check-input"
+																						id="u2f8" name="u2f8"></th>
+																					<th class="text-center"><input type="checkbox" class="form-check-input"
+																						id="u2f9" name="u2f9"></th>
+																					<th class="text-center"><input type="checkbox" class="form-check-input"
+																						id="u2f10" name="u2f10"></th>
+
 
                                             </tr>
                                             <tr>
-                                                <th class="text-center">User-3</th>
+																							<th class="text-center">User-3</th>
+																							<th class="text-center"><input type="checkbox" class="form-check-input" i
+																								id="u3f1" name="u3f1"></th>
+																				<th class="text-center"><input type="checkbox" class="form-check-input"
+																					id="u3f2" name="u3f2"></th>
+																				<th class="text-center"><input type="checkbox" class="form-check-input"
+																					id="u3f3" name="u3f3"></th>
+																				<th class="text-center"><input type="checkbox" class="form-check-input"
+																					id="u3f4" name="u3f4"></th>
+																				<th class="text-center"><input type="checkbox" class="form-check-input"
+																					id="u3f5" name="u3f5"></th>
+																				<th class="text-center"><input type="checkbox" class="form-check-input"
+																					id="u3f6" name="u3f6"></th>
+																				<th class="text-center"><input type="checkbox" class="form-check-input"
+																					id="u3f7" name="u3f7"></th>
+																				<th class="text-center"><input type="checkbox" class="form-check-input"
+																					id="u3f8" name="u3f8"></th>
+																				<th class="text-center"><input type="checkbox" class="form-check-input"
+																					id="u3f9" name="u3f9"></th>
+																				<th class="text-center"><input type="checkbox" class="form-check-input"
+																					id="u3f10" name="u3f10"></th>
 
-                                                <th class="text-center"><input type="checkbox" class="form-check-input"
-                                                        name="category"></th>
-                                                <th class="text-center"><input type="checkbox" class="form-check-input"
-                                                        name="category"></th>
-                                                <th class="text-center"><input type="checkbox" class="form-check-input"
-                                                        name="category"></th>
-                                                <th class="text-center"><input type="checkbox" class="form-check-input"
-                                                        name="category"></th>
-                                                <th class="text-center"><input type="checkbox" class="form-check-input"
-                                                        name="category"></th>
-                                                <th class="text-center"><input type="checkbox" class="form-check-input"
-                                                        name="category"></th>
-                                                <th class="text-center"><input type="checkbox" class="form-check-input"
-                                                        name="category"></th>
-                                                <th class="text-center"><input type="checkbox" class="form-check-input"
-                                                        name="category"></th>
-                                                <th class="text-center"><input type="checkbox" class="form-check-input"
-                                                        name="category"></th>
-                                                <th class="text-center"><input type="checkbox" class="form-check-input"
-                                                        name="category"></th>
 
                                             </tr>
                                             <tr>
                                                 <th class="text-center">User-4</th>
 
-                                                <th class="text-center"><input type="checkbox" class="form-check-input"
-                                                        name="category"></th>
-                                                <th class="text-center"><input type="checkbox" class="form-check-input"
-                                                        name="category"></th>
-                                                <th class="text-center"><input type="checkbox" class="form-check-input"
-                                                        name="category"></th>
-                                                <th class="text-center"><input type="checkbox" class="form-check-input"
-                                                        name="category"></th>
-                                                <th class="text-center"><input type="checkbox" class="form-check-input"
-                                                        name="category"></th>
-                                                <th class="text-center"><input type="checkbox" class="form-check-input"
-                                                        name="category"></th>
-                                                <th class="text-center"><input type="checkbox" class="form-check-input"
-                                                        name="category"></th>
-                                                <th class="text-center"><input type="checkbox" class="form-check-input"
-                                                        name="category"></th>
-                                                <th class="text-center"><input type="checkbox" class="form-check-input"
-                                                        name="category"></th>
-                                                <th class="text-center"><input type="checkbox" class="form-check-input"
-                                                        name="category"></th>
+                                                <th class="text-center"><input type="checkbox" class="form-check-input" i
+																									id="u4f1" name="u4f1"></th>
+																					<th class="text-center"><input type="checkbox" class="form-check-input"
+																						id="u4f2" name="u4f2"></th>
+																					<th class="text-center"><input type="checkbox" class="form-check-input"
+																						id="u4f3" name="u4f3"></th>
+																					<th class="text-center"><input type="checkbox" class="form-check-input"
+																						id="u4f4" name="u4f4"></th>
+																					<th class="text-center"><input type="checkbox" class="form-check-input"
+																						id="u4f5" name="u4f5"></th>
+																					<th class="text-center"><input type="checkbox" class="form-check-input"
+																						id="u4f6" name="u4f6"></th>
+																					<th class="text-center"><input type="checkbox" class="form-check-input"
+																						id="u4f7" name="u4f7"></th>
+																					<th class="text-center"><input type="checkbox" class="form-check-input"
+																						id="u4f8" name="u4f8"></th>
+																					<th class="text-center"><input type="checkbox" class="form-check-input"
+																						id="u4f9" name="u4f9"></th>
+																					<th class="text-center"><input type="checkbox" class="form-check-input"
+																						id="u4f10" name="u4f10"></th>
 
                                             </tr>
 
@@ -818,7 +827,7 @@
                                     </table>
                                 </div>
                                 <div>
-                                    <button type="submit" class="btn btn-primary w-md">Update Member</button>
+                                    <button type="submit" class="btn btn-primary w-md" id="updatemember" name="updatemember">Update Member</button>
                                 </div>
                             </div>
                             <!-- end card body -->

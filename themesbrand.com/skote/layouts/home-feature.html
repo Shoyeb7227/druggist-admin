@@ -616,18 +616,17 @@
                                         <h4 class="card-title mb-4">Add Search Tag</h4>
                                         <form action="">
                                             <div class="row mb-4">
-                                                <label for="horizontal-firstname-input"
-                                                    class="col-sm-3 col-form-label">Tag</label>
+                                                <label for="taginput" class="col-sm-3 col-form-label">Tag</label>
                                                 <div class="col-sm-12">
-                                                    <input type="text" class="form-control"
-                                                        id="horizontal-firstname-input" placeholder="Enter Your " />
+                                                    <input type="text" class="form-control" id="tag-input"
+                                                        name="tag-input" for="taginput" placeholder="Enter Your " />
                                                 </div>
                                             </div>
                                             <div class="row mb-4">
-                                                <label for="horizontal-email-input"
-                                                    class="col-sm-3 col-form-label">Url</label>
+                                                <label for="url-input" class="col-sm-3 col-form-label">Url</label>
                                                 <div class="col-sm-12">
-                                                    <input type="email" class="form-control" id="horizontal-email-input"
+                                                    <input type="email" class="form-control" id="url-input"
+                                                        name="url-input" for="url-input"
                                                         placeholder="Enter Your Email ID" />
                                                 </div>
                                             </div>
@@ -641,7 +640,8 @@
                                                         </label>
                                                     </div> -->
                                                     <div>
-                                                        <button type="submit" class="btn btn-primary w-md">
+                                                        <button type="submit" class="btn btn-primary w-md"
+                                                            name="add-tag" id="add-tag">
                                                             Add Tag
                                                         </button>
                                                     </div>
@@ -1029,32 +1029,35 @@
                                                                 <div class="input-group mb-3">
 
                                                                     <input type="file" class="form-control"
-                                                                        id="inputGroupFile03"
+                                                                        id="inp-file" name="inp-file" required
                                                                         aria-describedby="inputGroupFileAddon03"
                                                                         aria-label="Upload">
+                                                                    <span class="error inp-fileError"></span>
                                                                 </div>
                                                                 <div class="row mb-4">
 
                                                                     <div class="col-sm-12">
                                                                         <input type="text" class="form-control"
-                                                                            id="horizontal-firstname-input"
-                                                                            placeholder="Add New Title ">
+                                                                            id="mens-new-title" name="mens-new-title"
+                                                                            required placeholder="Add New Title ">
+                                                                        <span class="error mens-new-titleError"></span>
                                                                     </div>
                                                                 </div>
                                                                 <div class="row mb-4">
 
                                                                     <div class="col-sm-12">
-                                                                        <input type="email" class="form-control"
-                                                                            id="horizontal-email-input"
-                                                                            placeholder="Caregory">
+                                                                        <input type="text" class="form-control"
+                                                                            id="mens-category" name="mens-category"
+                                                                            required placeholder="Caregory">
+                                                                        <span class="error mens-categoryError"></span>
                                                                     </div>
                                                                 </div>
                                                                 <div class="row mb-4">
 
                                                                     <div class="col-sm-12">
-                                                                        <input type="password" class="form-control"
-                                                                            id="horizontal-password-input"
-                                                                            placeholder="Url">
+                                                                        <input type="text" class="form-control"
+                                                                            id="mens-url" placeholder="Url">
+                                                                        <span class="error mens-urlError"></span>
                                                                     </div>
                                                                 </div>
 
@@ -1063,13 +1066,16 @@
 
                                                                         <div class="col-12 mb-3">
                                                                             <label class="visually-hidden"
-                                                                                for="inlineFormInputGroupUsername">Search
+                                                                                for="SearchCta">Search
                                                                                 CTA</label>
                                                                             <div class="input-group">
 
-                                                                                <input type="text" class="form-control"
-                                                                                    id="inlineFormInputGroupUsername"
+                                                                                <input type="text" required
+                                                                                    class="form-control" id="SearchCta"
+                                                                                    name="SearchCta"
                                                                                     placeholder="Search CTA">
+                                                                                <span
+                                                                                    class="error SearchCtaError"></span>
                                                                                 <div class="input-group-text"><i
                                                                                         class="bx bx-check"></i>
                                                                                 </div>
@@ -1129,32 +1135,35 @@
                                                                 <div class="input-group mb-3">
 
                                                                     <input type="file" class="form-control"
-                                                                        id="inputGroupFile03"
+                                                                        id="inp-file" name="inp-file" required
                                                                         aria-describedby="inputGroupFileAddon03"
                                                                         aria-label="Upload">
+                                                                    <span class="error inp-fileError"></span>
                                                                 </div>
                                                                 <div class="row mb-4">
 
                                                                     <div class="col-sm-12">
                                                                         <input type="text" class="form-control"
-                                                                            id="horizontal-firstname-input"
-                                                                            placeholder="Add New Title ">
+                                                                            id="women-new-title" name="women-new-title"
+                                                                            required placeholder="Add New Title ">
+                                                                        <span class="error women-new-titleError"></span>
                                                                     </div>
                                                                 </div>
                                                                 <div class="row mb-4">
 
                                                                     <div class="col-sm-12">
-                                                                        <input type="email" class="form-control"
-                                                                            id="horizontal-email-input"
-                                                                            placeholder="Caregory">
+                                                                        <input type="text" class="form-control"
+                                                                            id="women-category" name="women-category"
+                                                                            required placeholder="Caregory">
+                                                                        <span class="error women-categoryError"></span>
                                                                     </div>
                                                                 </div>
                                                                 <div class="row mb-4">
 
                                                                     <div class="col-sm-12">
-                                                                        <input type="password" class="form-control"
-                                                                            id="horizontal-password-input"
-                                                                            placeholder="Url">
+                                                                        <input type="text" class="form-control"
+                                                                            id="mens-url" placeholder="Url">
+                                                                        <span class="error women-urlError"></span>
                                                                     </div>
                                                                 </div>
 
@@ -1163,13 +1172,16 @@
 
                                                                         <div class="col-12 mb-3">
                                                                             <label class="visually-hidden"
-                                                                                for="inlineFormInputGroupUsername">Search
+                                                                                for="SearchCta">Search
                                                                                 CTA</label>
                                                                             <div class="input-group">
 
-                                                                                <input type="text" class="form-control"
-                                                                                    id="inlineFormInputGroupUsername"
+                                                                                <input type="text" required
+                                                                                    class="form-control" id="SearchCta"
+                                                                                    name="SearchCta"
                                                                                     placeholder="Search CTA">
+                                                                                <span
+                                                                                    class="error SearchCtaError"></span>
                                                                                 <div class="input-group-text"><i
                                                                                         class="bx bx-check"></i>
                                                                                 </div>
@@ -1229,32 +1241,39 @@
                                                                 <div class="input-group mb-3">
 
                                                                     <input type="file" class="form-control"
-                                                                        id="inputGroupFile03"
+                                                                        id="inp-file" name="inp-file" required
                                                                         aria-describedby="inputGroupFileAddon03"
                                                                         aria-label="Upload">
+                                                                    <span class="error inp-fileError"></span>
                                                                 </div>
                                                                 <div class="row mb-4">
 
                                                                     <div class="col-sm-12">
                                                                         <input type="text" class="form-control"
-                                                                            id="horizontal-firstname-input"
+                                                                            id="general-new-title"
+                                                                            name="general-new-title" required
                                                                             placeholder="Add New Title ">
+                                                                        <span
+                                                                            class="error general-new-titleError"></span>
                                                                     </div>
                                                                 </div>
                                                                 <div class="row mb-4">
 
                                                                     <div class="col-sm-12">
-                                                                        <input type="email" class="form-control"
-                                                                            id="horizontal-email-input"
+                                                                        <input type="text" class="form-control"
+                                                                            id="general-category"
+                                                                            name="general-category" required
                                                                             placeholder="Caregory">
+                                                                        <span
+                                                                            class="error general-categoryError"></span>
                                                                     </div>
                                                                 </div>
                                                                 <div class="row mb-4">
 
                                                                     <div class="col-sm-12">
-                                                                        <input type="password" class="form-control"
-                                                                            id="horizontal-password-input"
-                                                                            placeholder="Url">
+                                                                        <input type="text" class="form-control"
+                                                                            id="general-url" placeholder="Url">
+                                                                        <span class="error general-urlError"></span>
                                                                     </div>
                                                                 </div>
 
@@ -1263,13 +1282,16 @@
 
                                                                         <div class="col-12 mb-3">
                                                                             <label class="visually-hidden"
-                                                                                for="inlineFormInputGroupUsername">Search
+                                                                                for="SearchCta">Search
                                                                                 CTA</label>
                                                                             <div class="input-group">
 
-                                                                                <input type="text" class="form-control"
-                                                                                    id="inlineFormInputGroupUsername"
+                                                                                <input type="text" required
+                                                                                    class="form-control" id="SearchCta"
+                                                                                    name="SearchCta"
                                                                                     placeholder="Search CTA">
+                                                                                <span
+                                                                                    class="error SearchCtaError"></span>
                                                                                 <div class="input-group-text"><i
                                                                                         class="bx bx-check"></i>
                                                                                 </div>

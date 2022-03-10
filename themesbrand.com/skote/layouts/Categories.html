@@ -620,26 +620,30 @@
                         <div class="col-lg-4 ">
                                 <div class="input-group-datatable">
                                     <div class="mb-4 input-custom">
-                                        <input type="text" placeholder="Name" id="cat" onkeyup="copytext_cat()"
-                                            class="form-control">
+                                        <input type="text" name="firstname"  placeholder="Name" id="firstname" onkeyup="copytext_cat()"
+                                            class="form-control" required>
+                                            <span class="error firstnameError"></span>
                                     </div>
                                     <div class="mb-4 input-custom">
-                                        <input type="text" placeholder="slug" id="cat-slug" class="form-control">
+                                        <input type="text" name="slug" id="slug" placeholder="slug"  class="form-control" required>
+                                        <span class="error slugError"></span>
                                     </div>
                                     <div class="mb-4 input-custom">
-                                        <select class="form-control select2">
+                                        <select class="form-control select2" name="select" id="select" required>
                                             <option value="" disabled selected>Parent Category</option>
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
+                                            <span class="error selectError"></span>
                                         </select>
                                     </div>
                                     <div class="mb-4">
-                                        <textarea class="form-control name="" id="" cols=" 5" rows="5"
-                                            placeholder="Description"></textarea>
+                                        <textarea class="form-control" name="textarea" id="textarea" cols=" 5" rows="5" placeholder="Description" required>
+                                        </textarea>
+                                        <span class="error txtError"></span>
                                     </div>
                                     <div>
-                                        <button class="btn btn-primary mt-3 mt-lg-0 add-btn"><i
+                                        <button class="btn btn-primary mt-3 mt-lg-0 add-btn" name="cat-btn" id="cat-btn"><i
                                                 class="fa-solid fa-circle-plus"></i> Add Category</button>
                                     </div>
                                 </div>
