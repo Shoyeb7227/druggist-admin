@@ -4844,7 +4844,6 @@ width: 600px;
     padding: 0px 20px 0px 25px;
     border-radius: 8px;
     border: 1px solid #e0e1e2;
-    width: 90%;
 }
 .main-navigation-section .sub-check{
   background:#fcfdfe;
@@ -5184,5 +5183,12 @@ width: 600px;
 
 
 
+/* All Product Start */
+.table-img img
+{
+  height: 50px;
+  width: 90px;
+}
+/* All Product End */
 
 
