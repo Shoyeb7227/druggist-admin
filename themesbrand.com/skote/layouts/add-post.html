@@ -605,21 +605,24 @@
                                 <form>
                                     <div class="row mb-4">
                                         <div class="col-sm-12">
-                                            <input type="text" class="form-control" id="horizontal-firstname-input"
-                                                placeholder="Add New Title ">
+                                            <input type="text" class="form-control" id="add-new-title"
+                                                name="add-new-title" placeholder="Add New Title " required>
+                                            <span id="title" name="title"></span>
                                         </div>
                                     </div>
                                     <div class="row mb-4">
                                         <div class="col-sm-12">
-                                            <input type="email" class="form-control" id="horizontal-email-input"
-                                                placeholder="Post Summary">
+                                            <input type="text" class="form-control" id="sub-summary" name="sub-summary"
+                                                placeholder="Post Summary" required>
+                                            <span id="summary" name="summary"></span>
                                         </div>
                                     </div>
 
                                     <div class="row mb-4">
                                         <div class="col-sm-12">
-                                            <textarea name="text-area-1015" id="text-area-1015" cols="30"
-                                                rows="10"></textarea>
+                                            <textarea name="text-area-1015" id="text-area-1015" cols="30" rows="10"
+                                                required></textarea>
+                                            <!-- <span id="textarea-one" name="textarea-one"></span>-->
                                         </div>
                                     </div>
 
@@ -641,7 +644,8 @@
                                                     <div class="col-lg-6">
                                                         <div class="mb-3">
                                                             <!-- <label class="form-label"> Select Category</label> -->
-                                                            <select class="form-control select2">
+                                                            <select class="form-control select2" id="select-cat-1"
+                                                                name="select-cat-1" required>
                                                                 <option>Select Category </option>
                                                                 <optgroup label="Alaskan/Hawaiian Time Zone">
                                                                     <option value="AK">Alaska</option>
@@ -672,7 +676,7 @@
 
                                                                 </optgroup>
                                                             </select>
-
+                                                            <span id="cat-selection-1" name="cat-selection-1"></span>
                                                         </div>
 
 
@@ -680,8 +684,9 @@
                                                     </div>
                                                     <div class="col-lg-6">
                                                         <div class="mb-3">
-                                                            <input type="text" class="form-control"
-                                                                id="formrow-password-input" placeholder="Search CTA">
+                                                            <input type="search" class="form-control" id="search-cat"
+                                                                name="search-cat" placeholder="Search CTA" required>
+                                                            <span id="search-cta" name="search-cta"></span>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -779,7 +784,7 @@
                                                     </div>
                                                 </div>
 
-                                                
+
                                             </div>
                                             <!-- end card body -->
                                         </div>
@@ -801,7 +806,8 @@
                                                     <div class="col-lg-6">
                                                         <div class="mb-3">
                                                             <!-- <label class="form-label"> Select Category</label> -->
-                                                            <select class="form-control select2">
+                                                            <select class="form-control select2" id="select-cat-2"
+                                                                name="select-cat-2" required>
                                                                 <option>Select Category </option>
                                                                 <optgroup label="Alaskan/Hawaiian Time Zone">
                                                                     <option value="AK">Alaska</option>
@@ -832,7 +838,7 @@
 
                                                                 </optgroup>
                                                             </select>
-
+                                                            <span id="cat-selection-2" name="cat-selection-2"></span>
                                                         </div>
 
 
@@ -840,8 +846,9 @@
                                                     </div>
                                                     <div class="col-lg-6">
                                                         <div class="mb-3">
-                                                            <input type="text" class="form-control"
-                                                                id="formrow-password-input" placeholder="Search CTA">
+                                                            <input type="search" class="form-control"
+                                                                id="formrow-password-input" name="" placeholder="Search CTA"
+                                                                >
                                                         </div>
                                                     </div>
                                                 </div>
@@ -932,33 +939,37 @@
 
                                 <div class="row mb-4">
                                     <div class="col-sm-12">
-                                        <label for="formmessage">Meta Title :</label>
-                                        <input type="text" class="form-control" id="horizontal-firstname-input"
-                                            placeholder="Meta Title ">
+                                        <label for="meta-title">Meta Title :</label>
+                                        <input type="text" class="form-control" id="meta-title" name="meta-title"
+                                            placeholder="Meta Title " required>
+                                        <span id="meta-title-span" name="meta-title-span"></span>
                                     </div>
                                 </div>
                                 <div class="row mb-4">
                                     <div class="col-sm-12">
-                                        <label for="formmessage">Slug :</label>
-                                        <input type="email" class="form-control" id="horizontal-email-input"
-                                            placeholder="Slug">
+                                        <label for="meta-slug">Slug :</label>
+                                        <input type="text" class="form-control" id="meta-slug" name="meta-slug"
+                                            placeholder="Slug" required>
+                                        <span id="meta-slug-span" name="meta-slug-span"></span>
                                     </div>
                                 </div>
 
                                 <div class="form-floating mb-3">
                                     <div class="mb-3">
-                                        <label for="formmessage">Meta Description :</label>
-                                        <textarea id="formmessage" class="form-control" rows="3"
-                                            placeholder="Meta Description"></textarea>
+                                        <label for="meta-description">Meta Description :</label>
+                                        <textarea id="meta-description" name="meta-description" class="form-control"
+                                            rows="3" placeholder="Meta Description" required></textarea>
+                                        <span id="meta-description-span" name="meta-description-span"></span>
                                     </div>
 
                                 </div>
 
                                 <div class="form-floating mb-3">
                                     <div class="mb-3">
-                                        <label for="formmessage">Schema :</label>
-                                        <textarea id="formmessage" class="form-control" rows="3"
+                                        <label for="schema">Schema :</label>
+                                        <textarea id="schema" name="schema" class="form-control" rows="3"
                                             placeholder="Schema"></textarea>
+                                        <span id="schema-span" name="schema-span"></span>
                                     </div>
                                 </div>
 
@@ -987,37 +998,41 @@
                                         CTA</label>
                                     <div class="input-group">
 
-                                        <input type="text" class="form-control" id="inlineFormInputGroupUsername"
-                                            placeholder="Search CTA">
+                                        <input type="search" class="form-control" id="inlineFormInputGroupUsername"
+                                            placeholder="Search CTA" >
                                         <div class="input-group-text"><i class="bx bx-check"></i>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="form-check d-flex align-items-center gap-3 mb-3 add_post_side_bar">
-                                    <input class="form-check-input p-2" type="checkbox" id="formCheck1">
+                                    <input class="form-check-input p-2" type="checkbox" id="formCheck1"
+                                        name="formcheck1" required>
                                     <label class="form-check-label" for="formCheck1">
                                         Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.
                                     </label>
                                 </div>
                                 <div class="form-check d-flex align-items-center gap-3 mb-3 add_post_side_bar">
-                                    <input class="form-check-input p-2" type="checkbox" id="formCheck1">
+                                    <input class="form-check-input p-2" type="checkbox" id="formCheck1"
+                                        name="formcheck1" required>
                                     <label class="form-check-label" for="formCheck1">
                                         Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.
                                     </label>
                                 </div>
                                 <div class="form-check d-flex align-items-center gap-3 mb-3 add_post_side_bar">
-                                    <input class="form-check-input p-2" type="checkbox" id="formCheck1">
+                                    <input class="form-check-input p-2" type="checkbox" id="formCheck1"
+                                        name="formcheck1" required>
                                     <label class="form-check-label" for="formCheck1">
                                         Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.
                                     </label>
                                 </div>
                                 <div class="form-check d-flex align-items-center gap-3 mb-3 add_post_side_bar">
-                                    <input class="form-check-input p-2" type="checkbox" id="formCheck1">
+                                    <input class="form-check-input p-2" type="checkbox" id="formCheck1"
+                                        name="formcheck1" required>
                                     <label class="form-check-label" for="formCheck1">
                                         Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.
                                     </label>
                                 </div>
-
+                                <span id="formcheck1-span" name="formcheck1-span"></span>
                             </div>
                         </div>
                         <div class="card">
@@ -1057,7 +1072,7 @@
                                                     <ul class="list-unstyled">
                                                         <div class="form-check mb-3">
                                                             <input class="form-check-input p-2 me-2" type="checkbox"
-                                                                id="formCheck1">
+                                                                id="form-check-1" name="form-check-1" required>
                                                             <label class="form-check-label check_title"
                                                                 for="formCheck1">
                                                                 Drugs
@@ -1066,7 +1081,7 @@
                                                         <li class="ps-4">
                                                             <div class="form-check mb-3">
                                                                 <input class="form-check-input p-2 me-2" type="checkbox"
-                                                                    id="formCheck1">
+                                                                    id="form-check-2" name="form-check-2" required>
                                                                 <label class="form-check-label check_title"
                                                                     for="formCheck1">
                                                                     Drugs Alternatives
@@ -1076,7 +1091,7 @@
                                                         <li class="ps-4">
                                                             <div class="form-check mb-3">
                                                                 <input class="form-check-input p-2 me-2" type="checkbox"
-                                                                    id="formCheck1">
+                                                                    id="form-check-3" name="form-check-3" required>
                                                                 <label class="form-check-label check_title"
                                                                     for="formCheck1">
                                                                     Drugs Comibinaion
@@ -1086,7 +1101,7 @@
                                                         <li class="ps-4">
                                                             <div class="form-check mb-3">
                                                                 <input class="form-check-input p-2 me-2" type="checkbox"
-                                                                    id="formCheck1">
+                                                                    id="form-check-4" name="form-check-4" required>
                                                                 <label class="form-check-label check_title"
                                                                     for="formCheck1">
                                                                     Drugs Review
@@ -1096,7 +1111,7 @@
                                                         <li class="ps-4">
                                                             <div class="form-check mb-3">
                                                                 <input class="form-check-input p-2 me-2" type="checkbox"
-                                                                    id="formCheck1">
+                                                                    id="form-check-5" name="form-check-5" required>
                                                                 <label class="form-check-label check_title"
                                                                     for="formCheck1">
                                                                     Drugs vs Drugs
@@ -1107,7 +1122,7 @@
                                                     <ul class="list-unstyled">
                                                         <div class="form-check mb-3">
                                                             <input class="form-check-input p-2 me-2" type="checkbox"
-                                                                id="formCheck1">
+                                                                id="form-check-1" name="form-check-1" required>
                                                             <label class="form-check-label check_title"
                                                                 for="formCheck1">
                                                                 Drugs
@@ -1116,7 +1131,7 @@
                                                         <li class="ps-4">
                                                             <div class="form-check mb-3">
                                                                 <input class="form-check-input p-2 me-2" type="checkbox"
-                                                                    id="formCheck1">
+                                                                    id="form-check-2" name="form-check-2" required>
                                                                 <label class="form-check-label check_title"
                                                                     for="formCheck1">
                                                                     Drugs Alternatives
@@ -1126,7 +1141,7 @@
                                                         <li class="ps-4">
                                                             <div class="form-check mb-3">
                                                                 <input class="form-check-input p-2 me-2" type="checkbox"
-                                                                    id="formCheck1">
+                                                                    id="form-check-3" name="form-check-3" required>
                                                                 <label class="form-check-label check_title"
                                                                     for="formCheck1">
                                                                     Drugs Comibinaion
@@ -1136,7 +1151,7 @@
                                                         <li class="ps-4">
                                                             <div class="form-check mb-3">
                                                                 <input class="form-check-input p-2 me-2" type="checkbox"
-                                                                    id="formCheck1">
+                                                                    id="form-check-4" name="form-check-4" required>
                                                                 <label class="form-check-label check_title"
                                                                     for="formCheck1">
                                                                     Drugs Review
@@ -1146,7 +1161,7 @@
                                                         <li class="ps-4">
                                                             <div class="form-check mb-3">
                                                                 <input class="form-check-input p-2 me-2" type="checkbox"
-                                                                    id="formCheck1">
+                                                                    id="form-check-5" name="form-check-5" required>
                                                                 <label class="form-check-label check_title"
                                                                     for="formCheck1">
                                                                     Drugs vs Drugs
@@ -1266,9 +1281,10 @@
                                 <a class="button"><u>+ Add new category</u></a>
                                 <div class="add_New_category">
                                     <div class="mb-3">
-                                        <input class="form-control mt-3" type="text" value="" id="example-text-input">
+                                        <input class="form-control mt-3" type="text" value="" id="add-new-cat"  name="add-new-cat" required>
+                                        <span id="add-new-categories-span" name="add-new-cat-span"></span>
                                         <!-- <label class="form-label"> Select Category</label> -->
-                                        <select class="form-control select2 my-3">
+                                        <select class="form-control select2 my-3" id="select-new-cat" name="select-new-cat" required>
                                             <option class="d-flex"><span>Parent Category</span><i
                                                     class="bx bx-chevron-down"></i></option>
                                             <optgroup label="Alaskan/Hawaiian Time Zone">
@@ -1300,6 +1316,7 @@
 
                                             </optgroup>
                                         </select>
+                                        <span id="select-new-cat-span" name="select-new-cat-span"></span>
                                         <button type="button"
                                             class="btn btn-outline-primary waves-effect waves-light">Add New
                                             Category</button>
@@ -1323,7 +1340,8 @@
                                             <div class="hstack gap-3">
                                                 <input class="form-control me-auto" type="text"
                                                     placeholder="Add your item here..."
-                                                    aria-label="Add your item here...">
+                                                    id="new-item" name="new-item" required>
+                                                    <span id="new-item" name="new-item"></span>
                                                 <button type="button" class="btn btn-outline-primary ">Submit</button>
                                                 <div class="vr"></div>
                                             </div>
@@ -1348,16 +1366,19 @@
 
                                     <div class="input-group m-3">
 
-                                        <input type="file" class="form-control" id="inputGroupFile03"
-                                            aria-describedby="inputGroupFileAddon03" aria-label="Upload">
+                                        <input type="file" class="form-control" id="upload-file" name="upload-file"
+                                            aria-describedby="inputGroupFileAddon03" aria-label="Upload" required>
+                                            <span id="upload-file-span" name="upload-file-span"></span>
                                     </div>
                                     <div class="m-3">
-                                        <label for="formrow-email-input" class="form-label">Image Title</label>
-                                        <input type="" class="form-control" id="" placeholder="Image Title">
+                                        <label for="image-title" class="form-label">Image Title</label>
+                                        <input type="text" class="form-control" id="image-title" name="image-title" placeholder="Image Title" required>
+                                        <span id="image-title-span" name="image-title-span"></span>
                                     </div>
                                     <div class="m-3">
-                                        <label for="formrow-email-input" class="form-label">Image ALT</label>
-                                        <input type="" class="form-control" id="" placeholder="Image ALT">
+                                        <label for="image-title" class="form-label">Image ALT</label>
+                                        <input type="text" class="form-control" id="image-title" name="image-alt" placeholder="Image ALT" required>
+                                        <span id="image-title-span" name="image-title-span"></span>
                                     </div>
                                 </div>
                             </div>
@@ -1367,14 +1388,15 @@
                                 <h4 class="card-title mb-4">Reviewed by</h4>
                                 <div class="col-md-12">
                                     <div class="form-floating mb-3">
-                                        <select class="form-select" id="floatingSelectGrid"
-                                            aria-label="Floating label select example">
+                                        <select class="form-select" id="reviewed" name="reviewed"
+                                            aria-label="Floating label select example" required>
                                             <option selected>Reviewed by
                                             </option>
                                             <option value="1">One</option>
                                             <option value="2">Two</option>
                                             <option value="3">Three</option>
                                         </select>
+                                        <span id="reviewed-span" name="reviewed-span"></span>
                                     </div>
                                 </div>
                             </div>
@@ -1384,13 +1406,14 @@
                                 <h4 class="card-title mb-4">Written by</h4>
                                 <div class="col-md-12">
                                     <div class="form-floating mb-3">
-                                        <select class="form-select" id="floatingSelectGrid"
-                                            aria-label="Floating label select example">
+                                        <select class="form-select" id="written" name="written"
+                                            aria-label="Floating label select example" required>
                                             <option selected>Written by</option>
                                             <option value="1">One</option>
                                             <option value="2">Two</option>
                                             <option value="3">Three</option>
                                         </select>
+                                        <span id="written-span" name="written-span"></span>
                                     </div>
                                 </div>
                             </div>
@@ -1401,8 +1424,9 @@
                                 <div class="col-md-12">
                                     <div class="input-group">
 
-                                        <input type="text" class="form-control" id="inlineFormInputGroupUsername"
-                                            placeholder="Disease">
+                                        <input type="text" class="form-control" id="disease" name="disease"
+                                            placeholder="Disease" required>
+                                            <span id="disease-span" name="disease-span"></span>
                                         <div class="input-group-text"><i class="bx bx-check"></i>
                                         </div>
                                     </div>
