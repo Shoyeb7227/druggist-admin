@@ -5042,8 +5042,8 @@ width: 600px;
   border-radius: 10px;
 }
 .cta-div img {
-  height: 70px;
-  width: 70px;
+  height: 50px;
+  width: 50px;
   border-radius: 50%;
 }
 .cta-div button {
@@ -5063,6 +5063,10 @@ width: 600px;
 
 /* Add post page : End // Shoyeb */
 /* Parent Category page : Start // Shoyeb */
+.toggle-height
+{
+  padding-top: 30px;
+}
 .category-toast-content
 {
     margin: auto;
@@ -5070,7 +5074,7 @@ width: 600px;
 }
 .category-toast-content h4
 {
-  font-size: 18px;
+  font-size: 14px;
 
 }
 .edit-cat-parent
