@@ -605,37 +605,32 @@
 
                             <div class="row">
 
-                                <div class="col-md-6">
-                                    <div class="d-flex">
-                                        <div class="cta-box">
-                                            <div class="center">
-                                                <div class="form-input">
-                                                    <div class="preview">
-                                                        <img id="file-ip-1-preview">
-                                                    </div>
-                                                    <label for="file-ip-1"></label>
-                                                    <input type="file" id="file-ip-1" accept="image/*"
-                                                        onchange="showPreview(event);">
-
-                                                </div>
-                                            </div>
+                                <div class="col-md-4 my-4">
+                                    <div class="col-lg-12 mb-3">
+                                        <div>
+                                            <label for="imgUpload" class="">Add CTA Vector image</label>
+                                            <input required type="file" class="form-control" id="imgUpload"
+                                                name="imgUpload" aria-describedby="inputGroupFileAddon03"
+                                                aria-label="Upload">
+                                            <span class="error imgError"></span>
                                         </div>
-                                        <p class="cta-add">Add CTA Vector</p>
                                     </div>
                                 </div>
 
-                                <div class="col-md-3">
+                                <div class="col-md-4">
                                     <div class="mb-3 mt-4">
-                                        <label for="formrow-email-input" class="form-label">TITLE</label>
-                                        <input type="email" class="form-control" id="formrow-email-input"
+                                        <label for="titleInput" class="form-label">TITLE</label>
+                                        <input required type="text" class="form-control" id="titleInput" name="title"
                                             placeholder="Title">
+                                        <span class="error titleError"></span>
                                     </div>
                                 </div>
-                                <div class="col-md-3">
+                                <div class="col-md-4">
                                     <div class="mb-3 mt-4 mx-3">
-                                        <label for="formrow-password-input" class="form-label">SHORT DETAILS</label>
-                                        <input type="password" class="form-control" id="Short Details"
-                                            placeholder="Enter Your Password">
+                                        <label for="shortDetails" class="form-label">SHORT DETAILS</label>
+                                        <input required type="text" class="form-control" id="shortDetails"
+                                            name="shortDetails" placeholder="Enter details">
+                                        <span class="error detailsError"></span>
                                     </div>
                                 </div>
                             </div>
@@ -644,21 +639,22 @@
 
                                 <div class="col-lg-4">
                                     <div class="mb-3 mt-4">
-                                        <label for="formrow-inputState" class="form-label">SELECT CATEGORY</label>
-                                        <select id="formrow-inputState" class="form-select">
+                                        <label for="selectCategory" class="form-label">SELECT CATEGORY</label>
+                                        <select id="selectCategory" name="selectCategory" class="form-select" required>
                                             <option selected>Select</option>
                                             <option>...</option>
                                         </select>
-
+                                        <span class="error selectCategoryError"></span>
                                     </div>
 
                                 </div>
 
                                 <div class="col-lg-4">
                                     <div class="mb-3 mt-4">
-                                        <label for="formrow-inputZip" class="form-label">ADD PRODUCT PAGE URL</label>
-                                        <input type="text" class="form-control" id="formrow-inputZip"
-                                            placeholder="example: www.druggist.com">
+                                        <label for="productPageUrl" class="form-label">ADD PRODUCT PAGE URL</label>
+                                        <input required type="text" class="form-control" name="productPageUrl"
+                                            id="productPageUrl" placeholder="example: www.druggist.com">
+                                        <span class="error productPageUrlError"></span>
                                     </div>
                                 </div>
                             </div>
@@ -680,7 +676,9 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-sm-6">
-                            <script>document.write(new Date().getFullYear())</script> © Skote.
+                            <script>
+                                document.write(new Date().getFullYear())
+                            </script> © Skote.
                         </div>
                         <div class="col-sm-6">
                             <div class="text-sm-end d-none d-sm-block">
