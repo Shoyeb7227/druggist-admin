@@ -61,7 +61,7 @@
                     <div class="app-search d-none d-lg-block">
                         <div class="position-relative">
                             <input type="text" class="form-control" placeholder="Search...">
-                            <span class="bx bx-search-alt"></span>
+                            <span class="bx bx-search-alt"></span required>
                         </div>
                     </div>
 
@@ -216,8 +216,8 @@
                             <div class="p-3">
                                 <div class="form-group m-0">
                                     <div class="input-group">
-                                        <input type="text" class="form-control" placeholder="Search ..."
-                                            aria-label="Recipient's username">
+                                        <input type="text" class="form-control" placeholder="Search ... required"
+                                            aria-label="Recipient's username" required>
                                         <div class="input-group-append">
                                             <button class="btn btn-primary" type="submit"><i
                                                     class="mdi mdi-magnify"></i></button>
@@ -604,24 +604,27 @@
                                     <div class="row">
                                         <div class="col-lg-4">
                                             <div class="mb-3">
-                                                <label for="formrow-inputCity" class="form-label">Display Name</label>
-                                                <input type="text" class="form-control" id="formrow-inputCity"
-                                                    placeholder="Display Name">
+                                                <label for="username"  class="">Display Name</label>
+                                                <input type="text" id="username" name="username" class="form-control"
+                                                    placeholder="Display Name" required>
+                                                    <span class="error usernameError"></span>
                                             </div>
                                         </div>
                                         <div class="col-lg-4">
                                             <div class="mb-3">
-                                                <label for="formrow-inputCity" class="form-label">First Name</label>
-                                                <input type="text" class="form-control" id="formrow-inputCity"
-                                                    placeholder="First Name">
+                                                <label for="firstname" class="">First Name</label>
+                                                <input type="text" class="form-control" id="firstname" 
+                                                    placeholder="First Name" required>
+                                                    <span class="error firstnameError"></span>
                                             </div>
                                         </div>
 
                                         <div class="col-lg-4">
                                             <div class="mb-3">
-                                                <label for="formrow-inputCity" class="form-label">Last Name</label>
-                                                <input type="text" class="form-control" id="formrow-inputCity"
-                                                    placeholder="Last Name">
+                                                <label for="lastname" class="">Last Name</label>
+                                                <input type="text" id="lastname" name="lastname" class="form-control" id=""
+                                                    placeholder="Last Name" required>
+                                                    <span class="error lastnameError"></span>
                                             </div>
                                         </div>
                                     </div>
@@ -629,26 +632,28 @@
                                     <div class="row">
                                         <div class="col-lg-4">
                                             <div class="mb-3">
-                                                <label for="formrow-inputCity" class="form-label">Email </label>
-                                                <input type="text" class="form-control" id="formrow-inputCity"
-                                                    placeholder="Email">
+                                                <label for="email" class="">Email </label>
+                                                <input type="email" class="form-control"
+                                                    placeholder="Email" required>
+                                                    <span class="error emailError"></span>
                                             </div>
                                         </div>
                                         <div class="col-lg-4">
                                             <div class="mb-3">
-                                                <label for="formrow-inputCity" class="form-label">New Password</label>
-                                                <input type="password" class="form-control" id="formrow-inputCity"
-                                                    placeholder="New Password">
+                                                <label for="password" class="">New Password</label>
+                                                <input type="password" class="form-control" id="password" name="password"                                           placeholder="New Password" required>
+                                                <span class="error passwordError"></span>
                                             </div>
                                         </div>
 
                                         <div class="col-lg-4">
                                             <div class="mb-3">
-                                                <label for="formrow-inputCity" class="form-label">Confirm
+                                                <label for="" class="">Confirm
                                                     Password</label>
                                                 <input type="password" class="form-control"
-                                                    id="horizontal-password-input" placeholder="Confirm Password">
-                                            </div>
+                                                    id="password" placeholder="Confirm Password" required>
+                                                    <span class="error passwordError"></span>
+                                            </div >
                                         </div>
                                     </div>
 
@@ -658,24 +663,28 @@
                                     <div class="row">
                                         <div class="col-lg-4">
                                             <div class="mb-3">
-                                                <label for="formrow-inputCity" class="form-label">Website</label>
-                                                <input type="text" class="form-control" id="formrow-inputCity"
-                                                    placeholder="Website url">
+                                                <label for="url" class="">Website</label>
+                                                <input type="text" class="form-control" id="url" name="url"
+                                                    placeholder="Website url" required>
+                                                    <span class="error urlError"></span>
                                             </div>
                                         </div>
                                         <div class="col-lg-4">
                                             <div class="mb-3">
-                                                <label for="formrow-inputCity" class="form-label">Facebook</label>
-                                                <input type="text" class="form-control" id="formrow-inputCity"
-                                                    placeholder="Facebook Link">
+                                                <label for="facebook" class="">Facebook</label>
+                                                <input type="text" class="form-control" id="facebook" name="facebook"
+                                                    placeholder="Facebook Link" required>
+                                                    <span class="error facebookError"></span>
+
                                             </div>
                                         </div>
 
                                         <div class="col-lg-4">
                                             <div class="mb-3">
-                                                <label for="formrow-inputCity" class="form-label">Twitter</label>
-                                                <input type="text" class="form-control" id="formrow-inputCity"
-                                                    placeholder="Twitter Link">
+                                                <label for="twitter" class="">Twitter</label>
+                                                <input type="text" class="form-control" id="twitter" name="twitter"
+                                                    placeholder="Twitter Link" required>
+                                                    <span class="error twitterError"></span>
                                             </div>
                                         </div>
                                     </div>
@@ -683,70 +692,43 @@
                                     <div class="row">
                                         <div class="col-lg-4">
                                             <div class="mb-3">
-                                                <label for="formrow-inputCity" class="form-label">Instagram </label>
-                                                <input type="text" class="form-control" id="formrow-inputCity"
-                                                    placeholder="Instagram URL">
+                                                <label for="instagram" class="">Instagram </label>
+                                                <input type="text" class="form-control" id="instagram" name="instagram"
+                                                    placeholder="Instagram URL" required>
+                                                    <span class="error instagramError"></span>
                                             </div>
                                         </div>
                                         <div class="col-lg-4">
                                             <div class="mb-3">
-                                                <label for="formrow-inputCity" class="form-label">Linkedin </label>
-                                                <input type="text" class="form-control" id="formrow-inputCity"
-                                                    placeholder="Linkedin Profile URL">
+                                                <label for="" class="">Linkedin </label>
+                                                <input type="text" class="form-control" id=""
+                                                    placeholder="Linkedin Profile URL" required>
+                                                    <span class="error instagramError"></span>
                                             </div>
                                         </div>
 
                                         <div class="col-lg-4">
                                             <div class="mb-3">
-                                                <label for="formrow-inputCity" class="form-label">Youtube </label>
-                                                <input type="text" class="form-control" id="formrow-inputCity"
-                                                    placeholder="Youtube Profile URL">
+                                                <label for="youtube" class="">Youtube </label>
+                                                <input type="text" class="form-control" id="youtube" name="youtube"
+                                                    placeholder="Youtube Profile URL" required>
+                                                    <span class="error youtubeError"></span>
                                             </div>
                                         </div>
+
+                                        <div class="col-lg-4 mb-3">
+                                            <label for="imgUpload" class="">Upload Image </label>
+                                            <input type="file" class="form-control" id="imgUpload"  name="imgUpload"  aria-describedby="inputGroupFileAddon03" aria-label="Upload">
+                                        </div>
+                                        
                                     </div>
 
 
-                                    <div class="row">
-                                        <div class="col-lg-4 ">
-                                            <div class="prof-pic d-flex align-items-center mb-3">
-                                                <!-- <span></span> -->
-                                                <div class="Neon Neon-theme-dragdropbox">
-                                                    <input
-                                                        style="z-index: 999; opacity: 0; width: 320px; height: 200px; position: absolute; right: 0px; left: 0px; margin-right: auto; margin-left: auto;"
-                                                        name="files[]" id="filer_input2" multiple="multiple"
-                                                        type="file">
-                                                    <div class="Neon-input-dragDrop">
-                                                        <div class="Neon-input-inner">
-                                                            <div class="Neon-input-icon"><i
-                                                                    class="fa fa-file-image-o"></i>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!-- <span class="profile-pic-box">
-                                                        <input type="file" name="" id="">
-                                                    </span>
-                                                    <div class="gallery-pos-img">
-                                                        <img src="https://i.ibb.co/JC1RYHv/Gallery-Icon.png" alt="">
-                                                    </div> -->
-                                                <p class="mx-2 mt-2">Add profile pic</p>
-                                            </div>
-
-
-                                        </div>
-
-                                    </div>
+                                  
 
 
                                     <div class="row">
                                         <div class="col-sm-9">
-
-                                            <!-- <div class="form-check mb-4">
-                                                    <input class="form-check-input" type="checkbox" id="horizontalLayout-Check">
-                                                    <label class="form-check-label" for="horizontalLayout-Check">
-                                                        Remember me
-                                                    </label>
-                                                </div> -->
 
                                             <div>
                                                 <button type="submit" class="btn btn-add w-md btn-primary"><i
@@ -777,7 +759,7 @@
                                 <div class="col-lg-6">
                                     <div class="mb-3">
                                         <label for="text-area-1010">Expertise</label>
-                                        <textarea id="text-area-1010" rows="2" class="form-control" rows="2"
+                                        <textarea id="text-area-1010"  rows="2" class="form-control" rows="2"
                                             placeholder="Expertise"></textarea>
                                     </div>
                                 </div>
@@ -830,7 +812,7 @@
 
                             <div>
                                 <button type="submit" class="btn btn-add w-md btn-primary"><i
-                                        class="fa fa-plus-circle mx-2" aria-hidden="true"></i>Add
+                                        class="fa fa-plus-circle mx-2" aria-hidden="true" name="addMemberBtn" id="addMemberBtn" ></i>Add
                                     Details</button>
                             </div>
 
@@ -891,7 +873,7 @@
 
                 <div class="form-check form-switch mb-3">
                     <input class="form-check-input theme-choice" type="checkbox" id="light-mode-switch" checked>
-                    <label class="form-check-label" for="light-mode-switch">Light Mode</label>
+                    <label class="form-check-label" for="light-mode-switch">Light Mode</label required>
                 </div>
 
                 <div class="mb-2">
@@ -899,7 +881,7 @@
                 </div>
                 <div class="form-check form-switch mb-3">
                     <input class="form-check-input theme-choice" type="checkbox" id="dark-mode-switch">
-                    <label class="form-check-label" for="dark-mode-switch">Dark Mode</label>
+                    <label class="form-check-label" for="dark-mode-switch">Dark Mode</label required>
                 </div>
 
                 <div class="mb-2">
@@ -907,7 +889,7 @@
                 </div>
                 <div class="form-check form-switch mb-3">
                     <input class="form-check-input theme-choice" type="checkbox" id="rtl-mode-switch">
-                    <label class="form-check-label" for="rtl-mode-switch">RTL Mode</label>
+                    <label class="form-check-label" for="rtl-mode-switch">RTL Mode</label required>
                 </div>
 
                 <div class="mb-2">
@@ -915,7 +897,7 @@
                 </div>
                 <div class="form-check form-switch mb-5">
                     <input class="form-check-input theme-choice" type="checkbox" id="dark-rtl-mode-switch">
-                    <label class="form-check-label" for="dark-rtl-mode-switch">Dark RTL Mode</label>
+                    <label class="form-check-label" for="dark-rtl-mode-switch">Dark RTL Mode</label required>
                 </div>
 
 
